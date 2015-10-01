@@ -1,0 +1,50 @@
+--- devede_other.py.orig	2015-09-30 22:03:56.000000000 +0200
++++ devede_other.py	2015-10-01 09:50:44.000000000 +0200
+@@ -419,6 +419,7 @@
+ 
+ 	""" Load the configuration """
+ 	home=get_home_directory()
++	userdir=home
+ 	global_vars["PAL"]=True
+ 	global_vars["multicore"]=1 # it shouldn't use multicore by default
+ 	global_vars["hyperthreading"]=True # by default, use hyperthreading
+@@ -437,6 +438,15 @@
+ 		home=os.path.join(home,"Application Data", "devede","devede.conf")
+ 	else:
+ 		home+=".devede"
++	
++	if not (sys.platform=="win32") or (sys.platform=="win64"):
++               print "This OS is a: Linux"
++               if not (os.path.exists(home)):
++            	    print "CONFIG DOES NOT EXISTS! Run workaround by blackPanther OS - www.blackpantheros.eu"
++		    archivo=open(home,"w")
++		    archivo.write("final_folder:"+userdir+"\n")
++                    archivo.close()
++                    print "WRITTEN A DEFAULT CONFIG"
+ 
+ 	print "home load: ", home
+ 	menuformat_found=False
+@@ -517,12 +527,13 @@
+ 		pass
+ 
+ 
++
+ def save_config(global_vars):
+ 
+ 	""" Stores the configuration """
+ 
+ 	home=get_home_directory()
+-
++        userdir=home
+ 	if (sys.platform=="win32") or (sys.platform=="win64"):
+ 		home=os.path.join(home,"Application Data", "devede")
+ 		if not os.path.isdir(home):
+@@ -547,6 +558,8 @@
+ 			archivo.write("hyperthreading:0\n")
+ 		if global_vars["finalfolder"]!="":
+ 			archivo.write("final_folder:"+str(global_vars["finalfolder"])+"\n")
++		else:
++			archivo.write("final_folder:"+userdir+"\n")
+ 		archivo.write("sub_language:"+str(global_vars["sub_language"])+"\n")
+ 		archivo.write("sub_codepage:"+str(global_vars["sub_codepage"])+"\n")
+ 		if global_vars["AC3_fix"]:

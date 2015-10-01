@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
 # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
@@ -420,6 +419,7 @@ def load_config(global_vars):
 
 	""" Load the configuration """
 	home=get_home_directory()
+	userdir=home
 	global_vars["PAL"]=True
 	global_vars["multicore"]=1 # it shouldn't use multicore by default
 	global_vars["hyperthreading"]=True # by default, use hyperthreading
@@ -438,6 +438,15 @@ def load_config(global_vars):
 		home=os.path.join(home,"Application Data", "devede","devede.conf")
 	else:
 		home+=".devede"
+	
+	if not (sys.platform=="win32") or (sys.platform=="win64"):
+               print "This OS is a: Linux"
+               if not (os.path.exists(home)):
+            	    print "CONFIG DOES NOT EXISTS! Run workaround by blackPanther OS - www.blackpantheros.eu"
+		    archivo=open(home,"w")
+		    archivo.write("final_folder:"+userdir+"\n")
+                    archivo.close()
+                    print "WRITTEN A DEFAULT CONFIG"
 
 	print "home load: ", home
 	menuformat_found=False
@@ -518,12 +527,13 @@ def load_config(global_vars):
 		pass
 
 
+
 def save_config(global_vars):
 
 	""" Stores the configuration """
 
 	home=get_home_directory()
-
+        userdir=home
 	if (sys.platform=="win32") or (sys.platform=="win64"):
 		home=os.path.join(home,"Application Data", "devede")
 		if not os.path.isdir(home):
@@ -548,6 +558,8 @@ def save_config(global_vars):
 			archivo.write("hyperthreading:0\n")
 		if global_vars["finalfolder"]!="":
 			archivo.write("final_folder:"+str(global_vars["finalfolder"])+"\n")
+		else:
+			archivo.write("final_folder:"+userdir+"\n")
 		archivo.write("sub_language:"+str(global_vars["sub_language"])+"\n")
 		archivo.write("sub_codepage:"+str(global_vars["sub_codepage"])+"\n")
 		if global_vars["AC3_fix"]:
