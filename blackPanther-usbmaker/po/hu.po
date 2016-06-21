@@ -1,0 +1,499 @@
+# Translation of liveusb-creator.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Sulyok Péter <peti@fedoraproject.org>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: liveusb-creator master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-21 21:28+0000\n"
+"PO-Revision-Date: 2011-02-21 21:30+0100\n"
+"Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
+"Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: liveusb/windows_dialog.py:104
+msgid "blackPanther USB Maker"
+msgstr "blackPanther USB-készítő"
+
+#: liveusb/windows_dialog.py:105
+msgid "This button will begin the LiveUSB creation process.  This entails optionally downloading a release (if an existing one wasn't selected),  extracting the ISO to the USB device, creating the persistent overlay, and installing the bootloader."
+msgstr "Ez a gomb indítja a LiveUSB készítés folyamatát.  Ebbe beleértendő egy kiadás letöltésének lehetősége (ha nem választott már meglévőt),  az ISO kicsomagolása az USB eszközre, állandó tárhely létrehozása és a rendszerindító telepítése."
+
+#: liveusb/windows_dialog.py:106
+msgid "Create Live USB"
+msgstr "USB készítése"
+
+#: liveusb/windows_dialog.py:107
+#: liveusb/linux_dialog.py:101
+msgid "This is the status console, where all messages get written to."
+msgstr "Ez az állapot kijelző, ahol minden üzenet megjelenik."
+
+#: liveusb/windows_dialog.py:108
+msgid "This is the progress bar that will indicate how far along in the LiveUSB creation process you are"
+msgstr "Ez a folyamatjelző, ami mutatja, hogy hol tart az élő USB létrehozásának folyamata."
+
+#: liveusb/windows_dialog.py:109
+#: liveusb/linux_dialog.py:103
+msgid "If you do not select an existing Live CD, the selected release will be downloaded for you."
+msgstr "Ha nem választ meglévő élő CD képet, akkor letöltöm a kiválasztott kiadást."
+
+#: liveusb/windows_dialog.py:110
+msgid "Download a ISO file"
+msgstr "ISO-képfájl letöltése"
+
+#: liveusb/windows_dialog.py:111
+#: liveusb/linux_dialog.py:105
+msgid "or"
+msgstr "v."
+
+#: liveusb/windows_dialog.py:112
+#: liveusb/linux_dialog.py:106
+msgid "This button allows you to browse for an existing Live CD ISO that you have previously downloaded.  If you do not select one, a release will be downloaded for you automatically."
+msgstr "Ezzel a gombbal böngészheti a már meglévő élő CD ISO-kat, melyeket már korábban letöltött.  Ha nem választ egyet, akkor egy kiadás automatikusan letöltésre kerül."
+
+#: liveusb/windows_dialog.py:113
+#: liveusb/linux_dialog.py:107
+msgid "Use existing CD-image"
+msgstr "Meglévő CD-kép használata"
+
+#: liveusb/windows_dialog.py:114
+#: liveusb/linux_dialog.py:108
+msgid "Browse"
+msgstr "Böngészés"
+
+#: liveusb/windows_dialog.py:116
+#: liveusb/linux_dialog.py:110
+msgid "This is the USB stick that you want to install your Live CD on.  This device must be formatted with the FAT filesystem."
+msgstr "Erre az USB eszközre fogja telepíteni az élő rendszert. Az eszközön FAT fájlrendszernek kell lennie."
+
+#: liveusb/windows_dialog.py:117
+#: liveusb/linux_dialog.py:111
+msgid "Target Device"
+msgstr "Céleszköz"
+
+#: liveusb/windows_dialog.py:118
+#: liveusb/linux_dialog.py:112
+msgid "By allocating extra space on your USB stick for a persistent overlay, you will be able to store data and make permanent modifications to your live operating system.  Without it, you will not be able to save data that will persist after a reboot."
+msgstr "Többlet hely lefoglalásával  egy állandó tárhelyet hozhat létre, melyen az élő rendszer adatokat és beállításokat tárolhat. Enélkül nem lesz képes adatokat menteni az élő rendszeren, melyek megmaradnak újraindítás után is."
+
+#: liveusb/windows_dialog.py:119
+msgid "Data&Changes Storage (0 Mb)"
+msgstr "Adat & változás tároló (0 Mb)"
+
+#: liveusb/creator.py:138
+msgid "Setting up OLPC boot file..."
+msgstr "OLPC bootfájl beállítása..."
+
+#: liveusb/creator.py:201
+#, python-format
+msgid ""
+"There was a problem executing the following command: `%s`\n"
+"A more detailed error log has been written to 'liveusb-creator.log'"
+msgstr ""
+"Probléma történt a következő parancs végrehajtásakor: „%s”\n"
+"Részletesebb hibanapló került a „liveusb-creator.log”-ban."
+
+#: liveusb/creator.py:218
+msgid "Verifying SHA1 checksum of blackPanther CD image..."
+msgstr "A CD-képfájl SHA1 összegének ellenőrzése…"
+
+#: liveusb/creator.py:222
+msgid "Verifying SHA256 checksum of blackPanher CD image..."
+msgstr "CD-képfájl SHA1 összegének ellenőrzése…"
+
+#: liveusb/creator.py:238
+msgid "Error: The SHA1 of your blackPanther CD is invalid.  You can run this program with the --noverify argument to bypass this verification check."
+msgstr "Hiba: A blackPanther CD-kép SHA1 összegének ellenőrzése sikertelen.  A programot a --noverify·argumentummal indítva mellőzheti ezt az ellenőrzést."
+
+#: liveusb/creator.py:244
+msgid "Unknown ISO, skipping checksum verification"
+msgstr "Ismeretlen ISO, checksum ellenőrzés kihagyása"
+
+#: liveusb/creator.py:255
+msgid "Not enough free space on device."
+msgstr "Nincs elég szabad hely az eszközön."
+
+#: liveusb/creator.py:262
+msgid "Creating"
+msgstr "Létrehozás"
+
+#: liveusb/creator.py:263
+msgid "data and change storage file..please wait!"
+msgstr "adat és változástároló fájl... kérem várjon!"
+
+#: liveusb/creator.py:269
+msgid "Format the blackPanther storagefile for usage..."
+msgstr "A blackPanther változástároló formázása a használathoz..."
+
+#: liveusb/creator.py:325
+msgid "Removing existing OS from device"
+msgstr "A meglévő rendszer eltávolítása…"
+
+#: liveusb/creator.py:343
+#, python-format
+msgid "Unable to remove previous OS: %s"
+msgstr "Nem lehet eltávolítani az előző rendszert: %s"
+
+#: liveusb/creator.py:374
+#, python-format
+msgid "Cannot find device %s"
+msgstr "A(z) %s eszköz nem található"
+
+#: liveusb/creator.py:455
+msgid "Unable to find any USB drives"
+msgstr "Nincs elérhető USB-s eszköz"
+
+#: liveusb/creator.py:495
+#: liveusb/creator.py:563
+msgid "Unknown filesystem.  Your device may need to be reformatted."
+msgstr "A fájlrendszer ismeretlen!  Az eszközt ajánlatos újraformázni."
+
+#: liveusb/creator.py:498
+#: liveusb/creator.py:566
+#, python-format
+msgid "Unsupported filesystem: %s"
+msgstr "Nem támogatott fájlrendszer: %s"
+
+#: liveusb/creator.py:513
+#, python-format
+msgid "Unable to mount device: %s"
+msgstr "A(z) %s eszköz csatolása sikertelen"
+
+#: liveusb/creator.py:560
+#: liveusb/creator.py:931
+msgid "Verifying filesystem..."
+msgstr "Fájlrendszer ellenőrzése…"
+
+#: liveusb/creator.py:570
+msgid "Modify "
+msgstr "Módosítom az "
+
+#: liveusb/creator.py:570
+msgid "'s label to: "
+msgstr " eszköz címkéjét a következőre:"
+
+#: liveusb/creator.py:592
+#: liveusb/creator.py:965
+msgid "Extracting blackPanther image to USB device..."
+msgstr "A blackPanther CD-kép kibontása az USB eszközre…"
+
+#: liveusb/creator.py:600
+msgid "Unable to find blackPanther OS on ISO"
+msgstr "Nem található a blackPanther OS az ISO-ban"
+
+#: liveusb/creator.py:658
+msgid "Extracting boot files to device. Please wait.."
+msgstr "Az indítófájlok kibontása az USB eszközre…Kérem várjon!"
+
+#: liveusb/creator.py:669
+msgid "Installing bootloader..."
+msgstr "Rendszerindító telepítése... Mindjárt kész!"
+
+#: liveusb/creator.py:692
+#: liveusb/creator.py:1014
+msgid "Removing"
+msgstr "Eltávolítás"
+
+#: liveusb/creator.py:735
+msgid "Verifying ISO MD5 checksum"
+msgstr "ISO MD5 ellenőrzőösszeg összehasonlítása"
+
+#: liveusb/creator.py:740
+msgid "ISO MD5 checksum verification failed"
+msgstr "ISO MD5 összegének ellenőrzése sikertelen!"
+
+#: liveusb/creator.py:742
+msgid "ISO MD5 checksum passed"
+msgstr "Az MD5 ellenőrzőösszeg rendben...folytatom"
+
+#: liveusb/creator.py:783
+#, python-format
+msgid "%s already bootable"
+msgstr "%s már bootloható"
+
+#: liveusb/creator.py:803
+msgid "Unable to find partition"
+msgstr "Nem található partíció"
+
+#: liveusb/creator.py:864
+msgid "Resetting Master Boot Record"
+msgstr "A(z) MBR alaphelyzetbehozása"
+
+#: liveusb/creator.py:867
+msgid "Unable to reset MBR.  You may not have the `syslinux` package installed"
+msgstr "Nem lehetett az MBR-t alaphelyzetbe állítani. Lehet hogy nincs a syslinux program telepítve."
+
+#: liveusb/creator.py:870
+msgid "Drive is a loopback, skipping MBR reset"
+msgstr "A meghajtó egy loopback eszköz, MBR reset kihagyása"
+
+#: liveusb/creator.py:874
+#: liveusb/creator.py:1140
+#, python-format
+msgid "Calculating the SHA1 of %s"
+msgstr "A(z) %s ellenőrzőösszegének számítása ..."
+
+#: liveusb/creator.py:925
+msgid "Error probing device"
+msgstr "Nem sikerült értelmezni az eszközt"
+
+#: liveusb/creator.py:927
+msgid "Unable to find any removable devices"
+msgstr "Nem található cserélhető eszköz"
+
+#: liveusb/creator.py:935
+msgid "Make sure your USB key is plugged in and formatted with the FAT filesystem"
+msgstr "Győződjön meg arról, hogy az USB eszközt bedugta és azon FAT fájlrendszer található"
+
+#: liveusb/creator.py:938
+#, python-format
+msgid ""
+"Unsupported filesystem: %s\n"
+"Please backup and format your USB key with the FAT filesystem."
+msgstr ""
+"Nem támogatott fájlrendszer: %s\n"
+"Kérem mentse le az adatait, majd alakítson ki az USB eszközön FAT fájlrendszert."
+
+#: liveusb/creator.py:973
+msgid "Wrote to device at"
+msgstr "Írás az eszközre"
+
+#: liveusb/creator.py:977
+msgid "Extracting blackPanther bootfile to device..."
+msgstr "Az indítófájlok kibontása az USB eszközre…"
+
+#: liveusb/creator.py:990
+msgid "Generate blackPanther storagefile on device..."
+msgstr "blackPanther tárolásifájl létrehozása az eszközön..."
+
+#: liveusb/creator.py:992
+msgid "Formating the blackPanther storagefile for usage..."
+msgstr "A blackPanther változástároló formázása a használathoz..."
+
+#: liveusb/creator.py:999
+msgid "Installing bootloader to device.."
+msgstr "Rendszerbetöltő telepítése az eszközre..."
+
+#: liveusb/creator.py:1037
+msgid "Unable to get Win32_LogicalDisk; win32com query did not return any results"
+msgstr ""
+
+#: liveusb/creator.py:1081
+msgid "Cannot find"
+msgstr "Nem található %1"
+
+#: liveusb/creator.py:1082
+msgid "Make sure to extract the entire liveusb-creator zip file before running this program."
+msgstr "A(z) '%s' nem található.  Győződjön meg arról, hogy a teljes liveusb-creator.zip fájlt kicsomagolta, mielőtt futtatja a programot "
+
+#: liveusb/gui.py:75
+#, python-format
+msgid "Unknown release: %s"
+msgstr "Ismeretlen kiadás: %s"
+
+#: liveusb/gui.py:78
+#: liveusb/gui.py:96
+msgid "Downloading: "
+msgstr "Letöltés alatt: "
+
+#: liveusb/gui.py:195
+msgid "Error: Cannot set the label or obtain "
+msgstr "Hiba: A címkét nem lehet beállítani, vagy az eszköz UUID-jét lekérni."
+
+#: liveusb/gui.py:236
+msgid "Complete the mission! Duration:"
+msgstr "A küldetés sikeresen befejeződött! Időtartama: "
+
+#: liveusb/gui.py:240
+msgid "blackPanther USB creation failed!"
+msgstr "A blackPanther USB létrehozása nem sikerült!"
+
+#: liveusb/gui.py:390
+msgid "Device is not yet mounted, so we cannot "
+msgstr "Az eszköz nincs csatlakoztatva, így nem lehet"
+
+#: liveusb/gui.py:398
+msgid "Partition is FAT16; Restricting overlay "
+msgstr ""
+
+#: liveusb/gui.py:439
+msgid "Persistent Storage"
+msgstr "Adat & változás tároló "
+
+#: liveusb/gui.py:458
+msgid "The Master Boot Record on your device is blank. "
+msgstr "Üres a Master Boot Recort az eszközön."
+
+#: liveusb/gui.py:472
+msgid "Warning: The Master Boot Record on your device "
+msgstr "Figyelmeztetés: A Master Boot Record az eszközén"
+
+#: liveusb/gui.py:485
+msgid "Unable to mount device"
+msgstr "Nem sikerült csatlakoztatni ezt az %s eszközt"
+
+#: liveusb/gui.py:491
+msgid ""
+"Your device already contains a LiveOS.\n"
+"If you "
+msgstr ""
+"Az eszköz már tartalmaz egy élő rendszert.\n"
+"Ha folytatja, felülírásra kerül."
+
+#: liveusb/gui.py:494
+msgid "Warning: Creating a new persistent overlay "
+msgstr "%s MB változás-tároló létrehozása"
+
+# A 211. sorral egyezőnek kell lennie a szövegnek…
+#: liveusb/gui.py:496
+msgid "Press 'Create Live USB' again if you wish to "
+msgstr "Nyomja meg az „USB készítése” gombot ismét, ha folytatni kívánja."
+
+#: liveusb/gui.py:543
+msgid "Download complete!"
+msgstr "A letöltés elkészült!"
+
+#: liveusb/gui.py:547
+msgid "Download failed: "
+msgstr "A letöltés nem sikerült:"
+
+#: liveusb/gui.py:548
+msgid "You can try again to resume your download"
+msgstr "Megpróbálhatja újra, így folytatva a letöltést"
+
+#: liveusb/gui.py:554
+msgid "Select Live ISO"
+msgstr "Válasszon egy ISO-t"
+
+#: liveusb/gui.py:560
+msgid "Unable to encode the filename of your livecd.  "
+msgstr "Nem lehetett a fájlnevet értelmezni."
+
+#: liveusb/gui.py:565
+msgid "selected"
+msgstr "Kijelölve"
+
+#: liveusb/linux_dialog.py:98
+msgid "blackPanther USB-Maker"
+msgstr "blackPanther USB-készítő"
+
+#: liveusb/linux_dialog.py:99
+msgid "This button will begin the USB creation process.  This entails optionally downloading a release (if an existing one wasn't selected),  extracting the ISO to the USB device, creating the persistent overlay, and installing the bootloader."
+msgstr "Ez a gomb indítja a USB készítés folyamatát.  Ebbe beleértendő egy kiadás letöltésének lehetősége (ha nem választott már meglévőt),  az ISO kicsomagolása az USB eszközre, állandó tárhely létrehozása és a rendszerindító telepítése. "
+
+#: liveusb/linux_dialog.py:100
+msgid "Create USB OS"
+msgstr "USB készítése"
+
+#: liveusb/linux_dialog.py:102
+msgid "This is the progress bar that will indicate how far along in the USB creation process you are"
+msgstr "Ez a folyamatjelző, ami mutatja, hogy hol tart az élő USB létrehozásának folyamata."
+
+#: liveusb/linux_dialog.py:104
+msgid "Download a ISO"
+msgstr "Egy ISO letöltése:"
+
+#: liveusb/linux_dialog.py:113
+msgid "Data && Changes Storage"
+msgstr "Adat && változás tároló"
+
+#: liveusb/urlgrabber/mirror.py:287
+msgid "No more mirrors to try."
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:693
+#: liveusb/urlgrabber/grabber.py:1172
+#, python-format
+msgid "Bad URL: %s"
+msgstr "Rossz URL: %s"
+
+#: liveusb/urlgrabber/grabber.py:781
+#, python-format
+msgid "Illegal reget mode: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:906
+#, python-format
+msgid "Local file does not exist: %s"
+msgstr "A helyi fájl nem található: %s"
+
+#: liveusb/urlgrabber/grabber.py:909
+#, python-format
+msgid "Not a normal file: %s"
+msgstr "%s nem egy normál fájl"
+
+#: liveusb/urlgrabber/grabber.py:967
+#, python-format
+msgid "Exceeded limit (%i): %s"
+msgstr "A határt elérte: (%i): %s"
+
+#: liveusb/urlgrabber/grabber.py:1150
+msgid "Byte range requested but range support unavailable"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1183
+#: liveusb/urlgrabber/grabber.py:1262
+#, python-format
+msgid "Timeout: %s"
+msgstr "Időtúllépés: %s"
+
+#: liveusb/urlgrabber/grabber.py:1185
+#: liveusb/urlgrabber/grabber.py:1264
+#, python-format
+msgid "IOError: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1187
+#, python-format
+msgid "OSError: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1189
+#, python-format
+msgid "HTTP Exception (%s): %s"
+msgstr "HTTP Kivétel történt  (%s): %s"
+
+#: liveusb/urlgrabber/grabber.py:1260
+#, python-format
+msgid "Socket Error: %s"
+msgstr "Socket hiba: %s"
+
+#: liveusb/urlgrabber/grabber.py:1332
+#, python-format
+msgid "Bad proxy URL: %s"
+msgstr "Pr&oxybeállító webcím: %s"
+
+#: liveusb/__init__.py:42
+msgid "You must run this application as root"
+msgstr "Az alkalmazás csak root joggal fut."
+
+#~ msgid "Creating %d Mb persistent overlay..."
+#~ msgstr "%d Mb állandó tárhely létrehozása"
+
+#~ msgid "Persistent Storage (%d Mb)"
+#~ msgstr "Állandó tárhely (%d Mb)"
+
+#~ msgid ""
+#~ "Warning: Creating a new persistent overlay will delete your existing one."
+#~ msgstr "Figyelmeztetés: Új állandó tárhely létrehozása törli a meglévőt."
+
+#~ msgid "Filesystem for %s unknown!"
+#~ msgstr "%s fájlrendszere ismeretlen!"
+
+#~ msgid "Download Fedora"
+#~ msgstr "Fedora letöltése"
+
+#~ msgid "Fedora LiveUSB Creator"
+#~ msgstr "Fedora LiveUSB készítő"
+
+#~ msgid ""
+#~ "Sorry, I'm having trouble encoding the filename of your livecd.  You may "
+#~ "have better luck if you move your ISO to the root of your drive (ie: C:\\)"
+#~ msgstr ""
+#~ "Baj van az élő CD képfájl fájlnevének kódolásával.  Talán több "
+#~ "szerencséje lesz, ha az ISO-t átmozgatja a lemez gyökerébe (azaz: C:\\)"

@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="screenshots">
+    <file>screenshots/firefox.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons/firefox.png</file>
+  </qresource>
+</RCC>

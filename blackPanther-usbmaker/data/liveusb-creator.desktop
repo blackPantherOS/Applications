@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=blackPanther USB-Maker
+Name[hu]=blackPanther USB-készítő
+Comment=Install blackPanther OS CD images to a USB device
+Comment[hu]=blackPanther OS CD-kép telepítése USB eszközre
+GenericName=Install blackPanther OS CD images to a USB device
+GenericName[hu]=blackPanther OS CD-kép telepítése USB eszközre
+Icon=blackpantherusb.png
+Exec=liveusb-creator
+Terminal=false
+Categories=System;Utility;X-blackPantherOS-CrossDesktop;
+StartupNotify=true

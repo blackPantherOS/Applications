@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-21 21:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: liveusb/windows_dialog.py:104
+msgid "blackPanther USB Maker"
+msgstr ""
+
+#: liveusb/windows_dialog.py:105
+msgid ""
+"This button will begin the LiveUSB creation process.  This entails "
+"optionally downloading a release (if an existing one wasn't selected),  "
+"extracting the ISO to the USB device, creating the persistent overlay, and "
+"installing the bootloader."
+msgstr ""
+
+#: liveusb/windows_dialog.py:106
+msgid "Create Live USB"
+msgstr ""
+
+#: liveusb/windows_dialog.py:107 liveusb/linux_dialog.py:101
+msgid "This is the status console, where all messages get written to."
+msgstr ""
+
+#: liveusb/windows_dialog.py:108
+msgid ""
+"This is the progress bar that will indicate how far along in the LiveUSB "
+"creation process you are"
+msgstr ""
+
+#: liveusb/windows_dialog.py:109 liveusb/linux_dialog.py:103
+msgid ""
+"If you do not select an existing Live CD, the selected release will be "
+"downloaded for you."
+msgstr ""
+
+#: liveusb/windows_dialog.py:110
+msgid "Download a ISO file"
+msgstr ""
+
+#: liveusb/windows_dialog.py:111 liveusb/linux_dialog.py:105
+msgid "or"
+msgstr ""
+
+#: liveusb/windows_dialog.py:112 liveusb/linux_dialog.py:106
+msgid ""
+"This button allows you to browse for an existing Live CD ISO that you have "
+"previously downloaded.  If you do not select one, a release will be "
+"downloaded for you automatically."
+msgstr ""
+
+#: liveusb/windows_dialog.py:113 liveusb/linux_dialog.py:107
+msgid "Use existing CD-image"
+msgstr ""
+
+#: liveusb/windows_dialog.py:114 liveusb/linux_dialog.py:108
+msgid "Browse"
+msgstr ""
+
+#: liveusb/windows_dialog.py:116 liveusb/linux_dialog.py:110
+msgid ""
+"This is the USB stick that you want to install your Live CD on.  This device "
+"must be formatted with the FAT filesystem."
+msgstr ""
+
+#: liveusb/windows_dialog.py:117 liveusb/linux_dialog.py:111
+msgid "Target Device"
+msgstr ""
+
+#: liveusb/windows_dialog.py:118 liveusb/linux_dialog.py:112
+msgid ""
+"By allocating extra space on your USB stick for a persistent overlay, you "
+"will be able to store data and make permanent modifications to your live "
+"operating system.  Without it, you will not be able to save data that will "
+"persist after a reboot."
+msgstr ""
+
+#: liveusb/windows_dialog.py:119
+msgid "Data&Changes Storage (0 Mb)"
+msgstr ""
+
+#: liveusb/creator.py:138
+msgid "Setting up OLPC boot file..."
+msgstr ""
+
+#: liveusb/creator.py:201
+#, python-format
+msgid ""
+"There was a problem executing the following command: `%s`\n"
+"A more detailed error log has been written to 'liveusb-creator.log'"
+msgstr ""
+
+#: liveusb/creator.py:218
+msgid "Verifying SHA1 checksum of blackPanther CD image..."
+msgstr ""
+
+#: liveusb/creator.py:222
+msgid "Verifying SHA256 checksum of blackPanher CD image..."
+msgstr ""
+
+#: liveusb/creator.py:238
+msgid ""
+"Error: The SHA1 of your blackPanther CD is invalid.  You can run this "
+"program with the --noverify argument to bypass this verification check."
+msgstr ""
+
+#: liveusb/creator.py:244
+msgid "Unknown ISO, skipping checksum verification"
+msgstr ""
+
+#: liveusb/creator.py:255
+msgid "Not enough free space on device."
+msgstr ""
+
+#: liveusb/creator.py:262
+msgid "Creating"
+msgstr ""
+
+#: liveusb/creator.py:263
+msgid "data and change storage file..please wait!"
+msgstr ""
+
+#: liveusb/creator.py:269
+msgid "Format the blackPanther storagefile for usage..."
+msgstr ""
+
+#: liveusb/creator.py:325
+msgid "Removing existing OS from device"
+msgstr ""
+
+#: liveusb/creator.py:343
+#, python-format
+msgid "Unable to remove previous OS: %s"
+msgstr ""
+
+#: liveusb/creator.py:374
+#, python-format
+msgid "Cannot find device %s"
+msgstr ""
+
+#: liveusb/creator.py:455
+msgid "Unable to find any USB drives"
+msgstr ""
+
+#: liveusb/creator.py:495 liveusb/creator.py:563
+msgid "Unknown filesystem.  Your device may need to be reformatted."
+msgstr ""
+
+#: liveusb/creator.py:498 liveusb/creator.py:566
+#, python-format
+msgid "Unsupported filesystem: %s"
+msgstr ""
+
+#: liveusb/creator.py:513
+#, python-format
+msgid "Unable to mount device: %s"
+msgstr ""
+
+#: liveusb/creator.py:560 liveusb/creator.py:931
+msgid "Verifying filesystem..."
+msgstr ""
+
+#: liveusb/creator.py:570
+msgid "Modify "
+msgstr ""
+
+#: liveusb/creator.py:570
+msgid "'s label to: "
+msgstr ""
+
+#: liveusb/creator.py:592 liveusb/creator.py:965
+msgid "Extracting blackPanther image to USB device..."
+msgstr ""
+
+#: liveusb/creator.py:600
+msgid "Unable to find blackPanther OS on ISO"
+msgstr ""
+
+#: liveusb/creator.py:658
+msgid "Extracting boot files to device. Please wait.."
+msgstr ""
+
+#: liveusb/creator.py:669
+msgid "Installing bootloader..."
+msgstr ""
+
+#: liveusb/creator.py:692 liveusb/creator.py:1014
+msgid "Removing"
+msgstr ""
+
+#: liveusb/creator.py:735
+msgid "Verifying ISO MD5 checksum"
+msgstr ""
+
+#: liveusb/creator.py:740
+msgid "ISO MD5 checksum verification failed"
+msgstr ""
+
+#: liveusb/creator.py:742
+msgid "ISO MD5 checksum passed"
+msgstr ""
+
+#: liveusb/creator.py:783
+#, python-format
+msgid "%s already bootable"
+msgstr ""
+
+#: liveusb/creator.py:803
+msgid "Unable to find partition"
+msgstr ""
+
+#: liveusb/creator.py:864
+msgid "Resetting Master Boot Record"
+msgstr ""
+
+#: liveusb/creator.py:867
+msgid "Unable to reset MBR.  You may not have the `syslinux` package installed"
+msgstr ""
+
+#: liveusb/creator.py:870
+msgid "Drive is a loopback, skipping MBR reset"
+msgstr ""
+
+#: liveusb/creator.py:874 liveusb/creator.py:1140
+#, python-format
+msgid "Calculating the SHA1 of %s"
+msgstr ""
+
+#: liveusb/creator.py:925
+msgid "Error probing device"
+msgstr ""
+
+#: liveusb/creator.py:927
+msgid "Unable to find any removable devices"
+msgstr ""
+
+#: liveusb/creator.py:935
+msgid ""
+"Make sure your USB key is plugged in and formatted with the FAT filesystem"
+msgstr ""
+
+#: liveusb/creator.py:938
+#, python-format
+msgid ""
+"Unsupported filesystem: %s\n"
+"Please backup and format your USB key with the FAT filesystem."
+msgstr ""
+
+#: liveusb/creator.py:973
+msgid "Wrote to device at"
+msgstr ""
+
+#: liveusb/creator.py:977
+msgid "Extracting blackPanther bootfile to device..."
+msgstr ""
+
+#: liveusb/creator.py:990
+msgid "Generate blackPanther storagefile on device..."
+msgstr ""
+
+#: liveusb/creator.py:992
+msgid "Formating the blackPanther storagefile for usage..."
+msgstr ""
+
+#: liveusb/creator.py:999
+msgid "Installing bootloader to device.."
+msgstr ""
+
+#: liveusb/creator.py:1037
+msgid ""
+"Unable to get Win32_LogicalDisk; win32com query did not return any results"
+msgstr ""
+
+#: liveusb/creator.py:1081
+msgid "Cannot find"
+msgstr ""
+
+#: liveusb/creator.py:1082
+msgid ""
+"Make sure to extract the entire liveusb-creator zip file before running this "
+"program."
+msgstr ""
+
+#: liveusb/gui.py:75
+#, python-format
+msgid "Unknown release: %s"
+msgstr ""
+
+#: liveusb/gui.py:78 liveusb/gui.py:96
+msgid "Downloading: "
+msgstr ""
+
+#: liveusb/gui.py:195
+msgid "Error: Cannot set the label or obtain "
+msgstr ""
+
+#: liveusb/gui.py:236
+msgid "Complete the mission! Duration:"
+msgstr ""
+
+#: liveusb/gui.py:240
+msgid "blackPanther USB creation failed!"
+msgstr ""
+
+#: liveusb/gui.py:390
+msgid "Device is not yet mounted, so we cannot "
+msgstr ""
+
+#: liveusb/gui.py:398
+msgid "Partition is FAT16; Restricting overlay "
+msgstr ""
+
+#: liveusb/gui.py:439
+msgid "Persistent Storage"
+msgstr ""
+
+#: liveusb/gui.py:458
+msgid "The Master Boot Record on your device is blank. "
+msgstr ""
+
+#: liveusb/gui.py:472
+msgid "Warning: The Master Boot Record on your device "
+msgstr ""
+
+#: liveusb/gui.py:485
+msgid "Unable to mount device"
+msgstr ""
+
+#: liveusb/gui.py:491
+msgid ""
+"Your device already contains a LiveOS.\n"
+"If you "
+msgstr ""
+
+#: liveusb/gui.py:494
+msgid "Warning: Creating a new persistent overlay "
+msgstr ""
+
+#: liveusb/gui.py:496
+msgid "Press 'Create Live USB' again if you wish to "
+msgstr ""
+
+#: liveusb/gui.py:543
+msgid "Download complete!"
+msgstr ""
+
+#: liveusb/gui.py:547
+msgid "Download failed: "
+msgstr ""
+
+#: liveusb/gui.py:548
+msgid "You can try again to resume your download"
+msgstr ""
+
+#: liveusb/gui.py:554
+msgid "Select Live ISO"
+msgstr ""
+
+#: liveusb/gui.py:560
+msgid "Unable to encode the filename of your livecd.  "
+msgstr ""
+
+#: liveusb/gui.py:565
+msgid "selected"
+msgstr ""
+
+#: liveusb/linux_dialog.py:98
+msgid "blackPanther USB-Maker"
+msgstr ""
+
+#: liveusb/linux_dialog.py:99
+msgid ""
+"This button will begin the USB creation process.  This entails optionally "
+"downloading a release (if an existing one wasn't selected),  extracting the "
+"ISO to the USB device, creating the persistent overlay, and installing the "
+"bootloader."
+msgstr ""
+
+#: liveusb/linux_dialog.py:100
+msgid "Create USB OS"
+msgstr ""
+
+#: liveusb/linux_dialog.py:102
+msgid ""
+"This is the progress bar that will indicate how far along in the USB "
+"creation process you are"
+msgstr ""
+
+#: liveusb/linux_dialog.py:104
+msgid "Download a ISO"
+msgstr ""
+
+#: liveusb/linux_dialog.py:113
+msgid "Data && Changes Storage"
+msgstr ""
+
+#: liveusb/urlgrabber/mirror.py:287
+msgid "No more mirrors to try."
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:693 liveusb/urlgrabber/grabber.py:1172
+#, python-format
+msgid "Bad URL: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:781
+#, python-format
+msgid "Illegal reget mode: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:906
+#, python-format
+msgid "Local file does not exist: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:909
+#, python-format
+msgid "Not a normal file: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:967
+#, python-format
+msgid "Exceeded limit (%i): %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1150
+msgid "Byte range requested but range support unavailable"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1183 liveusb/urlgrabber/grabber.py:1262
+#, python-format
+msgid "Timeout: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1185 liveusb/urlgrabber/grabber.py:1264
+#, python-format
+msgid "IOError: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1187
+#, python-format
+msgid "OSError: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1189
+#, python-format
+msgid "HTTP Exception (%s): %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1260
+#, python-format
+msgid "Socket Error: %s"
+msgstr ""
+
+#: liveusb/urlgrabber/grabber.py:1332
+#, python-format
+msgid "Bad proxy URL: %s"
+msgstr ""
+
+#: liveusb/__init__.py:42
+msgid "You must run this application as root"
+msgstr ""

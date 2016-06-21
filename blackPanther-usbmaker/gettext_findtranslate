@@ -1,0 +1,1 @@
+find . -name "*.py" | xargs xgettext --keyword=_  -o messages.po

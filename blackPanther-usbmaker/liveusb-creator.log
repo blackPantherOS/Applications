@@ -1,0 +1,28 @@
+echo "mtools_skip_check=1" > ~/.mtoolsrc
+
+mlabel -i /dev/sdb1 ::PANTHER-USB
+
+rm -f ~/.mtoolsrc
+
+md5sum "/home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso"357199bffe4cb678921ec406be6f50c1  /home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso
+
+
+mount -o loop,ro "/home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso" /tmp/tmp4mY73H
+
+cp -f /tmp/tmp4mY73H/livecd.sqfs '/media/MAXELL 4GB/loopbacks/livecd.sqfs'
+cp: writing `/media/MAXELL 4GB/loopbacks/livecd.sqfs': Input/output error
+
+echo "mtools_skip_check=1" > ~/.mtoolsrc
+
+mlabel -i /dev/sdb1 ::PANTHER-USB
+
+rm -f ~/.mtoolsrc
+
+md5sum "/home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso"357199bffe4cb678921ec406be6f50c1  /home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso
+
+
+mount -o loop,ro "/home/blackpanther/ISO's/MAKECD/blackPantherOS_v10.1.1_Destiny_CD_multikernel.iso" /tmp/tmpN86v6F
+
+cp -f /tmp/tmpN86v6F/livecd.sqfs '/media/disk/loopbacks/livecd.sqfs'
+cp: writing `/media/disk/loopbacks/livecd.sqfs': Input/output error
+
