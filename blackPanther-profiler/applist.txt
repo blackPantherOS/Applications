@@ -1,0 +1,47 @@
+* abev
+* gimp
+* popcorntime
+* kopete
+* chromium-pepper-flash
+* java-1.8.0-openjdk
+* fonts-ttf-ms
+* blackPanther-Gray-icon-theme
+* kdeartwork4-wallpapers
+* kdeartwork4-wallpapers-extra
+* plasma-applet-nm
+* wicd-kde
+* cairo-dock
+calligra
+xmind
+telepathy-kde-contact-list
+smb4k
+digikam
+virtualbox
+playonlinux
+chromium-browser
+kdenlive
+lmms
+acetoneiso
+amarok
+audacity
+openshot
+firefox
+skype
+komodo-edit
+flash-player-plugin
+inkscape
+sofastats
+handbrake
+scribus
+acroread
+master-pdf-editor
+filezilla
+divxconverter
+mixxx
+wine
+qtadb
+hydrogen
+rezound
+vacuum
+fwbuilder
+

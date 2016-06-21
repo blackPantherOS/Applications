@@ -1,0 +1,1103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Profiler 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-29 16:05+0100\n"
+"PO-Revision-Date: 2015-05-29 17:50-0000\n"
+"Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu_HU\n"
+
+#: .tmp/goodbyeWidget.py:257
+msgid "More"
+msgstr "Továbbiak"
+
+#: .tmp/goodbyeWidget.py:258 .tmp/ScrGoodbye.py:31
+msgid "Congratulations!"
+msgstr "Gratulálunk!"
+
+#: .tmp/goodbyeWidget.py:259
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Your settings have been applied.</span> Now you can start "
+"enjoying blackPanther OS or you can checkout the following links and "
+"applications for more settings or for help and support. Don't forget to "
+"<span style=\" font-weight:600;\">join our community on Facebook!</span></"
+"p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">A beállításaid alkalmazva lettek.</span> Most már élvezheted a "
+"blackpanther OS-ed vagy megnézheted az alábbi linkeket és alkalmazásokat a "
+"további beállításokhoz, vagy akár segítségért és támogatásért. Ne felejtsd "
+"el, hogy <span style=\" font-weight:600;\">csatlakozhatsz a Facebook-on a "
+"közösségünkhöz!</span></p></body></html>"
+
+#: .tmp/goodbyeWidget.py:264
+msgid "My Hardware Benchmark Page"
+msgstr "A hardver-teljesítmények oldala"
+
+#: .tmp/goodbyeWidget.py:265
+msgid "Go to your Hardware benchmark page and rate your hardware components."
+msgstr ""
+
+#: .tmp/goodbyeWidget.py:266
+msgid "My Hardware Page"
+msgstr "Hardvereim oldala"
+
+#: .tmp/goodbyeWidget.py:267 .tmp/goodbyeWidget.py:269
+msgid "Migration Wizard"
+msgstr "Migrációs varázsló"
+
+#: .tmp/goodbyeWidget.py:268
+msgid ""
+"A wizard to transfer files and settings from existing operating systems (e."
+"g. Windows) to blackPanther OS."
+msgstr ""
+
+#: .tmp/goodbyeWidget.py:270 .tmp/goodbyeWidget.py:272
+msgid "System Settings"
+msgstr "Rendszer beállítások"
+
+#: .tmp/goodbyeWidget.py:271
+msgid ""
+"Configuration tools for blackPanther OS such as the display, firewall, "
+"keyboard, user manager..."
+msgstr ""
+"blackPanther OS beállítóeszközök mind a kijezőhöz, tűzfalhoz, "
+"billentyűzethez, felhasználók kezeléséhez..."
+
+#: .tmp/goodbyeWidget.py:273 .tmp/goodbyeWidget.py:275
+msgid "Help and Support"
+msgstr "Segítség és támogatás"
+
+#: .tmp/goodbyeWidget.py:274
+msgid ""
+"blackPanther community, mailing lists, chat rooms, wiki's, help and support "
+"pages..."
+msgstr ""
+"blackPanther közösség, levelező lista, chat szoba, wiki, segítség és "
+"támogatás oldal..."
+
+#: .tmp/keyboardWidget.py:125
+msgid "Keyboard"
+msgstr "Billentyűzet"
+
+#: .tmp/keyboardWidget.py:126
+msgid "Test here the keyboard layout »"
+msgstr "Próbáld ki a billentyűzet kiosztást  »"
+
+#: .tmp/keyboardWidget.py:127 .tmp/mouseWidget.py:233 .tmp/networkWidget.py:97
+#: .tmp/packageWidget.py:153 .tmp/recommendWidget.py:122
+#: .tmp/searchWidget.py:84 .tmp/smoltWidget.py:126 .tmp/smoltWidget.py:127
+#: .tmp/styleWidget.py:140 .tmp/summaryWidget.py:88
+#: .tmp/wallpaperWidget.py:126 .tmp/welcomeWidget.py:129
+msgid "color: rgb(234, 225, 228);"
+msgstr ""
+
+#: .tmp/keyboardWidget.py:128
+msgid "Keyboard Layout Language"
+msgstr "Billentyűzetkiosztás nyelve"
+
+#: .tmp/keyboardWidget.py:129
+msgid ""
+"Profiler automatically selects the best keyboard layout according to your "
+"system language. If you want to use another layout other than the default "
+"keyboard layout, you can make your selection and test it instantly."
+msgstr ""
+"A Profiler automatikusan választja ki a legjobb billentyűzet kiosztás a te "
+"rendszered nyelve alapján. Ha másik kiosztást akarsz alapértelmezetten akkor "
+"itt tudsz választani és azonnal ki is tudod próbálni."
+
+#: .tmp/keyboardWidget.py:130
+msgid "Advanced"
+msgstr "Haladó"
+
+#: .tmp/mouseWidget.py:232
+msgid "Mouse"
+msgstr "Egér"
+
+#: .tmp/mouseWidget.py:234
+msgid "Setup Mouse or TouchPad Behavior"
+msgstr "Egér vagy érintőpad beállítása"
+
+#: .tmp/mouseWidget.py:235
+msgid ""
+"The <b>clicking behavior</b> defines how many times you want to click when "
+"you are opening a file. If you are <b>left handed</b>, you may prefer to "
+"swap the left and right buttons of your pointing device."
+msgstr ""
+"A <b>kattintási viselkedés</b> azt állítja be, hogy hányszor kell kattintani "
+"egy fájlra a megnyitásához. Ha te <b>balkezes</b> vagy, neked jobb lehet a "
+"mutató eszköz bal és a jobb gombjainak felcserélése."
+
+#: .tmp/mouseWidget.py:236
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This computer is a Laptop "
+"or do you want use <span style=\" font-weight:600; text-decoration: "
+"underline; color:#ffffff;\">Touchpad</span>? You can enable and configure "
+"here:</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Ez a gép egy laptop vagy "
+"egy <span style=\" font-weight:600; text-decoration: underline; color:"
+"#ffffff;\">érintőpadot</span> használsz? Itt tudod bekapcsolni vagy "
+"beállítani: </p></body></html>"
+
+#: .tmp/mouseWidget.py:241
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Configure and enable TouchPad tapping, </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">scrolling, buttons, etc...</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600;\"></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Konfiguráld és kapcsold be az érintőpadon a </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">görgetéseket, gombokat, stb...</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600;\"></p></body></html>"
+
+#: .tmp/mouseWidget.py:248
+msgid "Open"
+msgstr "Megnyitás"
+
+#: .tmp/mouseWidget.py:249
+msgid "Clicking Behaviour"
+msgstr "A kattintás viselkedése"
+
+#: .tmp/mouseWidget.py:250
+msgid "Dou&ble-click to open files and folders"
+msgstr "D&upla kattintás a megnyitásához"
+
+#: .tmp/mouseWidget.py:251
+msgid "Single-click to open files and folders"
+msgstr "Egyszeres kattintás a megnyitásához"
+
+#: .tmp/mouseWidget.py:252
+msgid "Button Order"
+msgstr "Gomb elrendezés"
+
+#: .tmp/mouseWidget.py:253
+msgid "Right Hand"
+msgstr "Jobbkezes"
+
+#: .tmp/mouseWidget.py:254
+msgid "Reverse scrolling"
+msgstr "Fordított görgetés"
+
+#: .tmp/mouseWidget.py:255
+msgid "Left Hand"
+msgstr "Balkezes"
+
+#: .tmp/networkWidget.py:96
+msgid "Network"
+msgstr "Hálózat"
+
+#: .tmp/networkWidget.py:98
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:9pt; "
+"font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:11pt;\">Connect to the</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:20pt;\">Internet or any Network</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:9pt; "
+"font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:11pt;\">Kapcsolódás az</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:20pt;\">Internethez vagy bármilyen hálózathoz</span></p></body></html>"
+
+#: .tmp/networkWidget.py:104
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Can you managing all wired "
+"or wireless interface in the computer.  Please select an option. If you "
+"don't know what is this, please choose the 'Next' button to other page.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Itt tudod kezelni az "
+"összes vezetékes vagy vezeték nélküli hálózati csatolót. Válassz egy opciót, "
+"ha nem tudod, hogy mi ez akkor egyszerűen válts a következő oldalra vagy "
+"másik lapra.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p></body></html>"
+
+#: .tmp/networkWidget.py:110
+msgid "Configure now network connections ...."
+msgstr "Állítsad be most a hálózati kapcsolatokat..."
+
+#: .tmp/networkWidget.py:111
+msgid "Configure"
+msgstr "Konfigurálás"
+
+#: .tmp/packageWidget.py:152
+msgid "Packages"
+msgstr "Csomagok"
+
+#: .tmp/packageWidget.py:154
+msgid "Updates"
+msgstr "Frissítések"
+
+#: .tmp/packageWidget.py:155
+msgid "Show updates in the system tray"
+msgstr "Mutassa a frissítéseket a paneltálcán"
+
+#: .tmp/packageWidget.py:156
+msgid "Check updates automatically every"
+msgstr "Frissítések ellenőrzése minden"
+
+#: .tmp/packageWidget.py:157
+#, fuzzy
+msgid "color: #642437;"
+msgstr "Elsődleges szín:"
+
+#: .tmp/packageWidget.py:158
+msgid " hours"
+msgstr "óra"
+
+#: .tmp/packageWidget.py:159
+msgid "Repositories"
+msgstr "Tárolóforrások"
+
+#: .tmp/packageWidget.py:160
+msgid "Contrib repository includes extra and handy programs."
+msgstr ""
+
+#: .tmp/packageWidget.py:161
+#, fuzzy
+msgid "Add contrib repository"
+msgstr "Hozzáadás..."
+
+#: .tmp/packageWidget.py:162
+msgid ""
+"To install and remove programs to blackPanther OS, use Package-Manager. "
+"Package-Manager also can automatically install the latest updates available. "
+"You can set the period for checking new updates."
+msgstr ""
+
+#: .tmp/packageWidget.py:163
+msgid "Install / Remove Programs"
+msgstr "Telepíti / Eltávolítja a programokat"
+
+#: .tmp/recommendWidget.py:121
+msgid "Recommend"
+msgstr "Alkalmazások"
+
+#: .tmp/recommendWidget.py:123
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: .tmp/recommendWidget.py:124
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Here you can download fresh recommend </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">application's list from blackPanther servers...</span></p></"
+"body></html>"
+msgstr ""
+
+#: .tmp/recommendWidget.py:130
+msgid "Update list from Internet"
+msgstr "Lista frissítése az internetről"
+
+#: .tmp/recommendWidget.py:131
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:10pt; font-weight:600;\">If don't want installing plugins or "
+"applications, </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:10pt; font-weight:600;\">check this box... The plugins need to more "
+"applications,</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:10pt; font-weight:600;\">like flash-player to can watch videos on "
+"Internet.</span></p></body></html>"
+msgstr ""
+
+#: .tmp/recommendWidget.py:138
+msgid "Skip this step"
+msgstr "A lépés kihagyása"
+
+#: .tmp/recommendWidget.py:139
+msgid "Choose Recommend Apps"
+msgstr "Javasolt alkalmazások"
+
+#: .tmp/recommendWidget.py:140
+msgid "Can find more suggested apps for your perfect system"
+msgstr "Itt találsz több javasolt alkalmazást a rendszer tökéletesítéséhez"
+
+#: .tmp/ScrGoodbye.py:30
+msgid "Apply Settings"
+msgstr "Beállítások alkalmazása"
+
+#: .tmp/ScrKeyboard.py:39
+msgid "Insert some catchy title about keyboards.."
+msgstr ""
+
+#: .tmp/ScrKeyboard.py:40
+msgid "Select your keyboard layout"
+msgstr "Válassz billentyűzet kiosztást"
+
+#: .tmp/ScrMenu.py:26 .tmp/ScrStyle.py:36
+msgid "Some catchy title about styles"
+msgstr ""
+
+#: .tmp/ScrMenu.py:27 .tmp/ScrStyle.py:37
+msgid "Some catchy description about styles"
+msgstr ""
+
+#: .tmp/ScrMenu.py:41
+msgid "Kick-off Menu"
+msgstr "Kick-off menü"
+
+#: .tmp/ScrMenu.py:43
+msgid ""
+"Kick-off menu is an advanced menu. Ogriginal in the KDE <br><br>The program "
+"shortcuts are easy to access and well organized."
+msgstr ""
+
+#: .tmp/ScrMenu.py:47
+msgid "Simple Menu"
+msgstr "Hagyományos menü"
+
+#: .tmp/ScrMenu.py:49
+msgid ""
+"Simple menu is an old style menu from KDE 3 (like Windows 98).<br><br>It is "
+"a very lightweight menu thus it is recommended for slower PC's."
+msgstr ""
+
+#: .tmp/ScrMenu.py:53
+msgid "Lancelot Menu"
+msgstr "Lancelot menü"
+
+#: .tmp/ScrMenu.py:55
+msgid ""
+"Lancelot is default customizable menu for your blackPanther OS Desktop."
+"<br><br>The program shortcuts are easy to access and well organized."
+msgstr ""
+
+#: .tmp/ScrMenu.py:59
+msgid "App Menu"
+msgstr "App Menü"
+
+#: .tmp/ScrMenu.py:61
+msgid ""
+"AppMenu is a Lancelot like menu for your blackPanther OS Desktop.<br><br>The "
+"program shortcuts are easy to access and well organized."
+msgstr ""
+
+#: .tmp/ScrMouse.py:33
+msgid "Mouse Config"
+msgstr "Egér beállítása"
+
+#: .tmp/ScrMouse.py:34
+msgid "Setup Mouse Behavior"
+msgstr "Egér viselkedés beállítása"
+
+#: .tmp/ScrMouse.py:185
+msgid "Left Handed"
+msgstr "Balkezes"
+
+#: .tmp/ScrMouse.py:185
+msgid "Right Handed"
+msgstr "Jobbkezes"
+
+#: .tmp/ScrMouse.py:187
+msgid "Single Click "
+msgstr "Egyszeres kattintás"
+
+#: .tmp/ScrMouse.py:187
+msgid "Double Click"
+msgstr "Dupla kattintás"
+
+#: .tmp/ScrNetwork.py:24 .tmp/ScrNetwork.py:25
+msgid "Network Manager"
+msgstr "Hálózat kezelő"
+
+#: .tmp/ScrPackage.py:29
+msgid "Package Manager"
+msgstr "Csomagkezelő"
+
+#: .tmp/ScrPackage.py:30
+msgid "Configure package manager settings"
+msgstr ""
+
+#: .tmp/ScrRecommend.py:39
+msgid "Insert some catchy title about apps.."
+msgstr ""
+
+#: .tmp/ScrRecommend.py:40
+msgid "Wonderful more apps! \\m/"
+msgstr "Még több fantasztikus alkalmazás! \\m/"
+
+#: .tmp/ScrSearch.py:27
+msgid "Some catchy title about desktop search"
+msgstr ""
+
+#: .tmp/ScrSearch.py:28
+msgid "Some catchy description desktop search"
+msgstr ""
+
+#: .tmp/ScrSearch.py:64
+msgid "On"
+msgstr "Be"
+
+#: .tmp/ScrSearch.py:66
+msgid "Off"
+msgstr "Ki"
+
+#: .tmp/ScrSmolt.py:31 .tmp/smoltWidget.py:125
+msgid "Smolt"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:32
+#, fuzzy
+msgid "Smolt Description"
+msgstr "Leírás:"
+
+#: .tmp/ScrSmolt.py:69
+msgid "Label"
+msgstr "Címke"
+
+#: .tmp/ScrSmolt.py:70
+msgid "Data"
+msgstr "Adat"
+
+#: .tmp/ScrSmolt.py:109
+msgid "&Back"
+msgstr "Vissza"
+
+#: .tmp/ScrSmolt.py:112 .tmp/smoltWidget.py:130
+msgid "&Privacy policy"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:115
+msgid "UUID"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:116
+msgid "OS"
+msgstr "OS"
+
+#: .tmp/ScrSmolt.py:117
+msgid "Default run level"
+msgstr "Alap futtatási szint"
+
+#: .tmp/ScrSmolt.py:118
+msgid "Language"
+msgstr "Nyelv"
+
+#: .tmp/ScrSmolt.py:119
+msgid "Platform"
+msgstr "Platform"
+
+#: .tmp/ScrSmolt.py:120
+msgid "BogoMIPS"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:121
+msgid "CPU Vendor"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:122
+msgid "CPU Model"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:123
+msgid "Number of CPUs"
+msgstr "CPU-k száma"
+
+#: .tmp/ScrSmolt.py:124
+msgid "CPU Speed"
+msgstr "Processzor sebesség"
+
+#: .tmp/ScrSmolt.py:125
+msgid "System Memory"
+msgstr "Rendszer memória"
+
+#: .tmp/ScrSmolt.py:126
+msgid "System Swap"
+msgstr "Rendszer lapozómemória"
+
+#: .tmp/ScrSmolt.py:127
+msgid "Vendor"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:128
+msgid "System"
+msgstr "Rendszer"
+
+#: .tmp/ScrSmolt.py:129
+#, fuzzy
+msgid "Form Factor"
+msgstr "A/V szinkronizációs faktor:"
+
+#: .tmp/ScrSmolt.py:130
+msgid "Kernel"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:131
+msgid "SELinux Enabled"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:132
+msgid "SELinux Policy"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:133
+msgid "SELinux Enforce"
+msgstr ""
+
+#: .tmp/ScrSmolt.py:146
+msgid "Yes"
+msgstr "Igen"
+
+#: .tmp/ScrSmolt.py:148
+msgid "No"
+msgstr "Nem"
+
+#: .tmp/ScrSummary.py:38 .tmp/ScrWelcome.py:24 .tmp/welcomeWidget.py:128
+msgid "Welcome"
+msgstr "Üdvözöllek"
+
+#: .tmp/ScrSummary.py:39 .tmp/ScrWelcome.py:25
+msgid "Welcome to Profiler"
+msgstr "Üdvözöllek a Profilerben"
+
+#: .tmp/ScrSummary.py:62
+msgid "Mouse Settings"
+msgstr "Egér beállítások"
+
+#: .tmp/ScrSummary.py:64
+#, python-format
+msgid "Selected Mouse configuration: <b>%s</b>"
+msgstr "Kiválasztott egér beállítás: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:66
+#, python-format
+msgid "Selected clicking behaviour: <b>%s</b>"
+msgstr "Kiválasztott egér viselkedés: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:70
+msgid "Menu Settings"
+msgstr "Menü beállítások"
+
+#: .tmp/ScrSummary.py:71
+#, python-format
+msgid "Selected Menu: <b>%s</b>"
+msgstr "Kiválasztott menü: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:75
+msgid "Wallpaper Settings"
+msgstr "Háttérkép beállítások"
+
+#: .tmp/ScrSummary.py:77
+msgid "You haven't selected any wallpaper."
+msgstr "Nem választottál másik háttérképet."
+
+#: .tmp/ScrSummary.py:79
+#, python-format
+msgid "Selected Wallpaper: <b>%s</b>"
+msgstr "Kiválasztott háttérkép: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:83
+msgid "Style Settings"
+msgstr "Stílus beállítások"
+
+#: .tmp/ScrSummary.py:86
+msgid "You haven't selected any style."
+msgstr "Nem választottál másik stílust."
+
+#: .tmp/ScrSummary.py:88
+#, python-format
+msgid "Selected Style: <b>%s</b>"
+msgstr "Kiválasztott stílus: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:94
+msgid "Search Settings"
+msgstr "Keresési beállítások"
+
+#: .tmp/ScrSummary.py:95
+#, python-format
+msgid "Desktop search: <b>%s</b>"
+msgstr "Asztali keresés: <b>%s</b>"
+
+#: .tmp/ScrSummary.py:101
+msgid "Smolt Settings"
+msgstr "Smolt Beállítások"
+
+#: .tmp/ScrSummary.py:102
+#, python-format
+msgid "Send my profile: <b>%s</b>"
+msgstr ""
+
+#: .tmp/ScrTouchPad.py:23 .tmp/ScrTouchPad.py:24
+msgid "TouchPad Configuration"
+msgstr "Érintőpad beállítások"
+
+#: .tmp/ScrWallpaper.py:34
+msgid "Insert some catchy title about wallpapers.."
+msgstr ""
+
+#: .tmp/ScrWallpaper.py:35
+msgid "Wonderful, awesome, superb wallpapers! \\m/"
+msgstr "Csodálatos, fantasztikus, remek háttérképek! \\m/"
+
+#: .tmp/searchWidget.py:83
+msgid "Search"
+msgstr "Keresés"
+
+#: .tmp/searchWidget.py:85
+msgid "Easy Desktop Search"
+msgstr "Egyszerű asztali keresés"
+
+#: .tmp/searchWidget.py:86
+msgid ""
+"Strigi Desktop Search indexes your frequently used files. This gives you "
+"very fast file search results. Strigi also can search for files based on "
+"their contents. (Warning! Not recommended for old/slow PC)"
+msgstr ""
+"Asztali indexelő keresés a gyakran használt fájlokhoz. Ez nagyon gyors fájl "
+"keresési eredményeket biztosít. Kereshet a fájlok vagy tartalmuk alapján. "
+"(Figyelem! Nem javasolt lassú vagy régi PC-n)"
+
+#: .tmp/searchWidget.py:87
+msgid "Allow Strigi to index my files"
+msgstr "Engedélyezi a Strigi-nek a fájlok indexelését"
+
+#: .tmp/smoltWidget.py:128
+msgid "&Send my profile"
+msgstr "&A profilom elküldése"
+
+#: .tmp/smoltWidget.py:129
+msgid "color:rgb(95, 34, 52)"
+msgstr ""
+
+#: .tmp/smoltWidget.py:131 .tmp/smoltWidget.py:132
+msgid "color: rgb(95, 34, 52);"
+msgstr ""
+
+#: .tmp/smoltWidget.py:133
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:9pt;\">   Smolt will only send hardware and basic operating system "
+"information to the blackPanther OS smolt server (smoon).  The only tie from "
+"the database to a submitters machine is the UUID.  As long as the submitter "
+"does not give out this UUID the submission is anonymous.  If at any point in "
+"time a user wants to delete their profile from the database they need only "
+"run</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:9pt;\">    </span><span style=\" font-size:9pt; font-style:italic;"
+"\">smoltDeleteProfile</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:9pt;\">   The information sent to the smolt database server should be "
+"considered public in that anyone can view the statistics, data and share "
+"machine profiles.  In  many ways smolt is designed to get hardware vendors "
+"and other 3rd parties attention.  As such, not only will this information be "
+"shared with 3rd parties, we will be using smolt as leverage to gain better "
+"support for open source drivers and better support in general.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:9pt; text-decoration: underline;\">IP Logging:</span><span style=\" "
+"font-size:9pt;\">  In blackPanther OS's smolt install all web traffic goes "
+"through a proxy server first.  This is the only place IP addresses are being "
+"logged and they are kept on that server for a period of 4 weeks at which "
+"time log rotation removes these logs.  The blackPanther OS Project does not "
+"aggregate ip addresses in the smolt database.  These logs are private and "
+"will not be available to the general public.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:9pt;\">   Users unhappy with this policy should simply not use smolt.  "
+"Users with questions about this policy should contact the blackPanther OS "
+"Infrastructure Team at admin [at] pardus.org.tr  Also remember that users "
+"can delete their profiles at any time using \"</span><span style=\" font-"
+"size:9pt; font-style:italic;\">smoltDeleteProfile</span><span style=\" font-"
+"size:9pt;\">\"</span></p></body></html>"
+msgstr ""
+
+#: .tmp/smoltWidget.py:142
+msgid "Help blackPanther OS Improve!"
+msgstr "Segíts a blackPanther OS javításában!"
+
+#: .tmp/smoltWidget.py:143
+msgid ""
+"<b>Smolt</b> is a tool that collects the information in the following table "
+"and sends it to us for which lets us improve blackPanther OS according to "
+"the user profile statistics."
+msgstr ""
+
+#: .tmp/styleitem.py:67 .tmp/ui_wallpaperItem.py:82
+#: .tmp/ui_widgetsrecomm.py:96
+msgid "Form"
+msgstr "Adatlap"
+
+#: .tmp/styleitem.py:68 .tmp/ui_widgetsrecomm.py:97
+msgid "border: 1px solid rgb(236, 236, 236, 100);"
+msgstr ""
+
+#: .tmp/styleitem.py:69
+msgid "styleName"
+msgstr ""
+
+#: .tmp/styleitem.py:70
+msgid "styleDesc"
+msgstr ""
+
+#: .tmp/styleWidget.py:139
+msgid "Themes"
+msgstr "Témák"
+
+#: .tmp/styleWidget.py:141
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600;\">Customize Your Desktop</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600;\">Munkaasztal testreszabása</span></p></body></"
+"html>"
+
+#: .tmp/styleWidget.py:146
+msgid ""
+"Choose your favorite theme and desktop type. Customize the blackPanther OS "
+"with colorful styles and themes."
+msgstr ""
+"Válaszd ki a kedvenc témádat és asztal típusodat. Testreszabhatod a "
+"blackPanther OS-t színesebb témákkal, stílusokkal."
+
+#: .tmp/styleWidget.py:147
+msgid "Desktop Type"
+msgstr "Asztal típusa"
+
+#: .tmp/styleWidget.py:148
+msgid "Desktop view (KDE4 Style)"
+msgstr "Asztali nézet (KDE 4 stílus)"
+
+#: .tmp/styleWidget.py:149
+msgid "Folder view (KDE3 Style)"
+msgstr "Mappa nézet (KDE3 stílus)"
+
+#: .tmp/styleWidget.py:150
+msgid "Number of Desktops"
+msgstr "Asztalok száma"
+
+#: .tmp/summaryWidget.py:87
+msgid "Summary"
+msgstr "Összefoglalás"
+
+#: .tmp/summaryWidget.py:89
+msgid "Save Your Settings"
+msgstr "A beállításaim elmentése"
+
+#: .tmp/summaryWidget.py:90
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">You have successfully "
+"finished all steps. Here's a summary of the settings you want to apply. "
+"Click <span style=\" font-weight:600;\">Apply Settings</span> to save them "
+"now or go back to appeal. You are now ready to enjoy blackPanther OS!</p></"
+"body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Sikeresen befejeztél "
+"minden lépést. Itt láthatsz most egy összefoglalót. Kattints a <span style="
+"\" font-weight:600;\">Beállítások alkalmazása</span> gombra hogy elmentsed "
+"őket vagy lépj vissza a módosításhoz. Most már kész vagy a blackPanther OS "
+"használatára!</p></body></html>"
+
+#: .tmp/ui_wallpaperItem.py:83
+msgid "Click and selected..."
+msgstr "Kattint és kiválaszt..."
+
+#: .tmp/ui_wallpaperItem.py:84
+msgid "wallPaperName"
+msgstr ""
+
+#: .tmp/ui_wallpaperItem.py:85
+msgid "wallpaperDesc"
+msgstr ""
+
+#: .tmp/ui_widgetsrecomm.py:98
+msgid "appName"
+msgstr ""
+
+#: .tmp/ui_widgetsrecomm.py:99
+msgid "appDesc"
+msgstr ""
+
+#: .tmp/ui_widgetsrecomm.py:100
+msgid "appSize"
+msgstr ""
+
+#: .tmp/ui_widgetsrecomm.py:101
+msgid "Install"
+msgstr "Telepítés"
+
+#: .tmp/wallpaperWidget.py:125
+msgid "Wallpaper"
+msgstr "Háttérkép"
+
+#: .tmp/wallpaperWidget.py:127
+msgid "Choose wallpaper from file"
+msgstr "Háttérkép választása fájlból"
+
+#: .tmp/wallpaperWidget.py:128
+msgid "Don't change wallpaper"
+msgstr "Ne cserélje a háttérképet"
+
+#: .tmp/wallpaperWidget.py:129
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Choose your favorite "
+"wallpaper for blackPanther OS. Don't forget to check out <span style=\" font-"
+"weight:600;\">Desktop Settings</span> for downloading new and cool "
+"wallpapers.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Válassz egy kedvenc "
+"háttérképet a blackPanther OS-re. Ne felejtsed el, hogy az <span style=\" "
+"font-weight:600;\">Asztal beállításoknál</span> tudsz letölteni több "
+"fantasztikus háttérképet is.</p></body></html>"
+
+#: .tmp/wallpaperWidget.py:134
+msgid "Choose a Wallpaper"
+msgstr "Válasszon egy háttérképet"
+
+#: .tmp/welcomeWidget.py:130
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:25pt; "
+"font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt;\">Welcome to blackPanther OS </span><span style=\" font-"
+"size:22pt; vertical-align:super;\">v11.x</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:25pt; "
+"font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt;\">Üdvözöllek a blackPanther OS </span><span style=\" font-"
+"size:22pt; vertical-align:super;\">v15.x </span>!</p></body></html>"
+
+#: .tmp/welcomeWidget.py:135
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">The blackPanther OS is a "
+"reliable, secure, fast and user friendly operating system. <br /><br />With "
+"blackPanther, you can connect to the internet, read your e-mails, work with "
+"your office documents, watch movies, play music, develop applications, play "
+"games and much more! <br /><br /><span style=\" font-weight:600;\">Wizard</"
+"span> will help you personalize your blackPanther workspace easily and "
+"quickly. Please click <span style=\" font-weight:600;\">next</span> in order "
+"to begin.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'URW Gothic L'; font-size:11pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A blackpanther OS "
+"megbízható, biztonságos, gyors és felhasználóbarát operációs rendszer.<br /"
+"><br />A blackPanther-el, tudsz csatlakozni az internethez, elolvashatod az "
+"e-maileket, dolgozhatsz az irodai dokumentumokon, tudsz filmet nézni, zenét "
+"hallgatni, fejleszteni, játszani, és még sok minden mást! <br /><br /><span "
+"style=\" font-weight:600;\">A varázsló</span> most segíteni fog neked, hogy "
+"gyorsan és könnyen személyre szabhasd a blackPanther munkakörnyezeted. "
+"Kattints a <span style=\" font-weight:600;\">következő</span> gombra a "
+"kezdéshez.</p></body></html>"
+
+#: .tmp/welcomeWidget.py:140
+msgid "toolTipText"
+msgstr ""
+
+#: .tmp/welcomeWidget.py:141
+msgid "Run Profiler on System Startup"
+msgstr "Futtatás rendszer indulásakor"

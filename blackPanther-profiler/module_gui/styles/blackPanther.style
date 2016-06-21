@@ -1,0 +1,14 @@
+[Style]
+name = blackPanther Green
+
+description = Dark-green colored to blackPanther OS default desktop
+
+panelPosition = 3
+
+panelPosition = 4
+widgetStyle = qtcurve
+colorScheme = BlackPantherBase
+desktopTheme = default
+thumbnail = bpcolor.png
+iconTheme = MIB-oxygeno
+windowDecoration = kwin3_oxygen

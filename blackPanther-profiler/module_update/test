@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+
+# use PyQt's QMovie() widget to play an animated gif
+# tested with PyQt4.4 and Python 2.5
+# also tetsed with PyQt4.5 and Python 3.0
+# vegaseat
+
+import sys 
+# expect minimal namespace conflicts
+from PyQt4.QtCore import *
+from PyQt4.QtGui import * 
+
+class MoviePlayer(QWidget): 
+    def __init__(self, parent=None): 
+        QWidget.__init__(self, parent) 
+        # setGeometry(x_pos, y_pos, width, height)
+        self.setGeometry(200, 200, 400, 300)
+        self.setWindowTitle("QMovie to show animated gif")
+
+        # set up the movie screen on a label
+        self.movie_screen = QLabel()
+        # expand and center the label 
+        self.movie_screen.setSizePolicy(QSizePolicy.Expanding, 
+            QSizePolicy.Expanding)        
+        self.movie_screen.setAlignment(Qt.AlignCenter) 
+
+        main_layout = QVBoxLayout() 
+        main_layout.addWidget(self.movie_screen) 
+        self.setLayout(main_layout) 
+
+        # use an animated gif file you have in the working folder
+        # or give the full file path                
+        movie = QMovie("dw.gif", QByteArray(), self) 
+        movie.setCacheMode(QMovie.CacheAll) 
+        movie.setSpeed(100) 
+        self.movie_screen.setMovie(movie) 
+        movie.start() 
+        
+
+app = QApplication(sys.argv) 
+player = MoviePlayer() 
+player.show() 
+sys.exit(app.exec_())

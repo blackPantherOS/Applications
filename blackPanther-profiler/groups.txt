@@ -1,0 +1,150 @@
+Accessibility @ Sys
+Amusements/Games/Action/Arcade @ Game
+Application/Finances @ Other
+Application/Misc @ Other
+Applications @ Other
+Applications/CPAN @ Other
+Applications/Databases @ Sys
+Applications/Internet @ Web
+Applications/Multimedia @ Multimedia
+Applications/Productivity @ Office
+Applications/Publishing @ Publish
+Applications/System @ Sys
+Archiving/Backup @ Sys
+Archiving/Cd burning @ Tools
+Archiving/Compression @ Tools
+Archiving/Other @ Other
+Books/Computer books @ Other
+Books/Other @ Other
+Communications @ Comm
+Databases @ Sys
+Development @ Dev
+Development/C @ Dev
+Development/C++ @ Dev
+Development/Databases @ Dev
+Development/Debug @ Dev
+Development/GNOME and GTK+ @ Dev
+Development/Java @ Dev
+Development/KDE and Qt @ Dev
+Development/KDE/Qt @ Dev
+Development/Kernel @ Dev
+Development/Languages @ Dev
+Development/Languages/Python @ Dev
+Development/Libraries @ Dev
+Development/Libraries/C and C++ @ Dev
+Development/Libraries/Other @ Dev
+Development/Libraries/Python @ Dev
+Development/OCaml @ Dev
+Development/Other @ Dev
+Development/Perl @ Dev
+Development/PHP @ Dev
+Development/Python @ Dev
+Development/Ruby @ Dev
+Development/Tools @ Dev
+Development/X11 @ Dev
+Editors @ Office
+Education @ Edu
+Emulators @ Emulators
+File tools @ Tools
+Finance/Accounting @ Other
+Games/Arcade @ Game
+Games/Boards @ Game
+Games/Cards @ Game
+Games/Other @ Game
+Games/Sports @ Game
+Graphical Desktop/Applications/Multimedia @ Sys
+Graphical desktop/Audio @ Sys
+Graphical desktop/Enlightenment @ Sys
+Graphical desktop/Fluxbox @ Sys
+Graphical desktop/FVWM based @ Sys
+Graphical desktop/GNOME @ Sys
+Graphical desktop/KDE @ Sys
+Graphical desktop/KDE4 @ Sys
+Graphical desktop/LXDE @ Sys
+Graphical desktop/Openbox @ Sys
+Graphical desktop/Other @ Sys
+Graphical desktop/WindowMaker @ Sys
+Graphical Desktop/X11 @ Sys
+Graphical desktop/Xfce @ Sys
+Graphics @ Graphics
+Graphics/Utilities @ Graphics
+Libraries/Python @ Dev
+Monitoring @ Tools
+More applications/Other @ Other
+Mulimedia/Sound @ Multimedia
+Multimedia/Graphics @ Multimedia
+Multimedia/Sound @ Multimedia
+Multimedia/Video @ Multimedia
+Networking/Chat @ Comm
+Networking/File transfer @ Net
+Networking/Instant messaging @ Comm
+Networking/IRC @ Comm
+Networking/Mail @ Comm
+Networking/Other @ Net
+Networking/Remote access @ Net
+Networking/WWW @ Web
+Network/Instant Messaging @ Comm
+Office @ Office
+Office/Editor @ Office
+Productivity/Multimedia/Other @ Multimedia
+Productivity/Multimedia/Sound/Players @ Multimedia
+Productivity/Multimedia/Sound/Utilities @ Multimedia
+Productivity/Multimedia/Video/Players @ Multimedia
+Productivity/Network @ Net
+Productivity/Networking/Other @ Net
+Productivity/Networking/Web/Browsers @ Web
+Public Keys @ Sys
+Publishing @ Publish
+Sciences/Astronomy @ Other
+Sciences/Geosciences @ Other
+Sciences/Mathematics @ Other
+Sciences/Other @ Other
+Security @ Sys
+Server @ Sys
+Shells @ Sys
+Sound @ Multimedia
+Sound/Editors and Converters @ Multimedia
+Sound/Players @ Multimedia
+Sound/Utilities @ Multimedia
+System @ Sys
+System/Base @ Sys
+System/Cluster @ Sys
+System/Configuration @ Sys
+System/Configuration/Boot and Init @ Sys
+System/Configuration/Hardware @ Sys
+System/Configuration/Networking @ Sys
+System/Configuration/Other @ Sys
+System/Configuration/Packaging @ Sys
+System/Configuration/Printing @ Sys
+System/Configuration/Theme @ Sys
+System/Console @ Sys
+System Environment/Daemons @ Sys
+System Environment/Kernel @ Sys
+System Environment/Libraries @ Sys
+System/Fonts/True type @ Sys
+System/Fonts/Type1 @ Sys
+System/Fonts/X11 bitmap @ Sys
+System/GUI/KDE @ Sys
+System/Internationalization @ Sys
+System/Kernel @ Sys
+System/Kernel and hardware @ Sys
+System/Libraries @ Sys
+System/Monitoring @ Sys
+System/Networking @ Tools
+System/Packaging @ Sys
+System/Printing @ Sys
+System/Servers @ Sys
+System/Tools @ Sys
+System/X11 @ Sys
+System/X11/Utilities @ Sys
+Terminals @ Sys
+Text tools @ Tools
+Tools @ Tools
+Toys @ Game
+Unspecified @ Other
+User Interface/Desktops @ Sys
+Video @ Multimedia
+Video/Editors and Converters @ Multimedia
+Video/Utilities @ Multimedia
+X11 @ Sys
+X11/Applications @ Sys

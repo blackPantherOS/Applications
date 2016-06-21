@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export PATH=.:$PATH
+pyrcc4 module_gui/raw.qrc -o raw_rc.py
+python ./profiler.py $@
+find -type f -name "*.pyc" | xargs rm -f

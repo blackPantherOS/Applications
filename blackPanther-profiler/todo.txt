@@ -1,0 +1,13 @@
+# porting to KDE5
+---
+# mouse/egér
++ touchpad  
++ synaptiks (kcm_synaptiks)
+wacom config (kcm_wacomtablet)
+
+#security/biztonság
+- kchildlock  (kcm_kchildlock)
+- drakfw
+- clamav
+
+

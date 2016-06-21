@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+python module_migration/migration.py
+find -type f -name "*.pyc" | xargs rm -f
