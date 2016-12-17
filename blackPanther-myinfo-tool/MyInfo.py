@@ -4,7 +4,7 @@
 ##
 ## Feature and Written by Charles Barcza kbarcza@blackpanther.hu
 ##    blackPanther OS - www.blackpanther.hu
-##
+## Planed: rewrite to Qt5
 
 
 import sys, re, os, string, signal
@@ -42,10 +42,10 @@ class GetInfo():
       self.network_share_level = commands.getoutput("cat /etc/samba/smb.conf | sed 's|#.*||'|grep security|awk -F= '{ print $2 }'|sed 's| ||'")
       self.network_computer_name = commands.getoutput("echo $HOSTNAME")
       self.network_firewall_state = 'Unknown'
-      self.video_memory =  commands.getoutput("cat /var/log/Xorg.0.log|grep \"VideoRam\"|sed 's|.*: ||'| awk '{ print $1 \" \" $2 }'")
+      self.video_memory = commands.getoutput("lspci -v -s `lspci | awk '/VGA/{print $1}'`|sed -n '/Memory.*, prefetchable/s/.*\[size=\([^]]\+\)\]/\1/p'")
       self.video_driver =  commands.getoutput("cat /var/log/Xorg.0.log|grep \"Driver for\"|sed 's|.*) ||'| awk -F: '{ print $1 }'")
       self.rendering_support = commands.getoutput("glxinfo | grep 'direct rendering' | sed 's|^d|D|'")
-      self.desktop_effects = commands.getoutput("[[ -n $(cat \"$HOME/.kde4/share/config/kwinrc\" | grep \"^Enabled=true\" ) ]] && echo Enabled")
+      self.desktop_effects = commands.getoutput("[[ -n $(cat \"$HOME/.config/kwinrc\" | grep \"^Enabled=true\" ) ]] && echo Enabled")
       self.network_details = commands.getoutput("/sbin/ifconfig|grep Ethernet | sed 's|Link encap:Ethernet||'")
       
       
@@ -318,19 +318,19 @@ class MainWindow(QtGui.QMainWindow):
         self.groupBox4.setGeometry(QtCore.QRect(10, 20, 470, 291))
         self.groupBox4.setObjectName("groupBox4")
         self.textLabel6_2 = QtGui.QLabel(self.groupBox4)
-        self.textLabel6_2.setGeometry(QtCore.QRect(30, 60, 410, 20))
+        self.textLabel6_2.setGeometry(QtCore.QRect(30, 60, 510, 20))
         self.textLabel6_2.setWordWrap(False)
         self.textLabel6_2.setObjectName("textLabel6_2")
         self.textLabel5_2 = QtGui.QLabel(self.groupBox4)
-        self.textLabel5_2.setGeometry(QtCore.QRect(30, 30, 410, 20))
+        self.textLabel5_2.setGeometry(QtCore.QRect(30, 30, 510, 20))
         self.textLabel5_2.setWordWrap(False)
         self.textLabel5_2.setObjectName("textLabel5_2")
         self.textLabel7_2 = QtGui.QLabel(self.groupBox4)
-        self.textLabel7_2.setGeometry(QtCore.QRect(30, 90, 410, 20))
+        self.textLabel7_2.setGeometry(QtCore.QRect(30, 90, 510, 20))
         self.textLabel7_2.setWordWrap(False)               
         self.textLabel7_2.setObjectName("textLabel7_2")
         self.textLabel8_2 = QtGui.QLabel(self.groupBox4)
-        self.textLabel8_2.setGeometry(QtCore.QRect(30, 120, 410, 20))
+        self.textLabel8_2.setGeometry(QtCore.QRect(30, 120, 510, 20))
         self.textLabel8_2.setWordWrap(False)
         self.textLabel8_2.setObjectName("textLabel8_2")
         self.tabWidget.addTab(self.TabPage2, "")
