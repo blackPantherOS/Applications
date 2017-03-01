@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=blackPanther Notification Daemon
+Name[xx]=xxxxxxxxx
+Exec=bubbled
+Icon=bubbled
+Type=Application
+Comment=User Notification daemon for KDE systems
+Comment[xx]=xxxxxxxxxx
+X-KDE-autostart-condition=bubbledsrc:General:Autostart:true
+X-KDE-autostart-after=panel

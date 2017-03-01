@@ -1,0 +1,22 @@
+01 - lock file (DONE)
+02 - sortörés (DONE)
+03 - pipe file eseten nem kapcsolodik a daemonhoz (DONE)
+04 - állítható megjelenesi idõ (DONE)
+05 - egyszere csak egy példány futhat (DONE)
+06 - session restore esetén ne nyissa meg a beállítások ablakot (elvileg OK)
+06 - buborek pozicio nagyon lent van messze az ikontol (???)
+07 - hang a buberek megjelensekor (figyelni kell az arts es egyeb hangszerverekre)
+08 - konzolos üzenetek kiírtása
+09 - beállítások ablak túl nagy (DONE)
+
+plugin:
+	-upgrademsg; ami figyeli a frissiteseket a szerveren
+	-clubmsg; ami nezi az uj klubos programokat vagy szolgaltatasokat
+	-usermsg; a felhasznalok a halozaton popup uzeneteket kuldhetnek egymas gepere..
+
+definialt beviteli modok:
+	-install (ok)
+	-uninstall (ok)
+	-upgrade (ok)
+	-error (ok)
+	-other (ok)

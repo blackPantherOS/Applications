@@ -1,0 +1,436 @@
+#!/bin/sh
+
+## Written by Charles Barcza for blackPanther OS
+## kbarcza@blackpanther.hu  *  www.blackpanther.hu
+#
+# Default KDE integration autodetect
+#
+ . /etc/bubblemsg.conf
+#
+
+
+dbg()
+{
+    	  if [ -n "$DEBUG" ]; then
+       	echo
+       	$SETCOLOR_FAIL
+       	echo -e "DBG: ${@}"
+       	$SETCOLOR_NORMAL
+       	echo
+    	  fi
+}
+
+chkint() {
+dbg "Integration: $KDEINTEGRATION" 
+if [[ "$KDE_FULL_SESSION" = "true" ]]&&[[ ! -n "$KDEINTEGRATION" ]]; then
+#if [[ -n "$KDE_FULL_SESSION" ]]&&[[ ! -n $KDEINTEGRATION ]]; then
+    KDEINTEGRATION="auto"
+    dbg "KDE SESSION: TRUE"
+elif [[ -f "$LOCKFILE" ]];then
+    dbg "EXTERNAL LOCK: TRUE"
+    KDEINTEGRATION=`cat $LOCKFILE | sed 's|KDEINTEGRATION=||'`   
+elif [[ ! -n "$KDE_FULL_SESSION" ]];then
+    KDEINTEGRATION="no"
+fi
+}
+
+chmod 666 $LOCKFILE 2>/dev/null
+
+for lockapp in kpackagekit rpmanager gpk-application ;do 
+  CPS="ps -C $lockapp --format args --noheaders"
+    if $CPS | grep $lockapp > /dev/null 2>&1; then
+	exit
+    fi
+done
+
+A="The"
+ITITLE="New Application(s) Install.."
+IMSG="install over successfully"
+UTITLE="Application(s) Update.."
+UMSG="update over successfully"
+RMTITLE="Application(s) Uninstall.."
+RMMSG="remove over successfully"
+ERRMSG="An Error occurred.."
+WARNMSG="Warning/Iportant Message!"
+OTHMSG="Action.."
+RUNMSG="Running now!"
+
+case $LANG in
+	hu* )
+	    A="A(z)"
+	    ITITLE="Programtelepítés.."
+	    IMSG="telepítése sikeresen befejeződött"
+	    UTITLE="Programfrissítés.."
+	    UMSG="frissítése sikeresen befejeződött"
+	    RMTITLE="Pogrameltávolítás.."
+	    RMMSG="eltávolítása sikeresen befejeződött"
+	    OTHMSG="Művelet.."
+	    ERRMSG="Egy hiba történt.."
+	    WARNMSG="Figyelmeztetés/Fontos értesítés!"
+	    RUNMSG="Futtat most!"
+esac
+
+
+SETCOLOR_FAIL="echo -en \\033[1;31m"
+SETCOLOR_NORMAL="echo -en \\033[0;39m"
+version="0.5"
+sroot=/usr
+iroot=$sroot/share
+itheme=$iroot/icons/blackPantherOS
+isize=32x32
+ipath=$itheme/$isize
+ICON=$3
+daemon=bubbled
+
+if [ -z $ICON ]
+then
+ICN_NORMAL=$ipath/actions/messagebox_warning.png
+ICN_LOW=$ipath/actions/messagebox_info.png
+ICN_CRITICAL=$ipath/actions/messagebox_critical.png
+else 
+ICN_NORMAL=$ICON
+ICN_LOW=$ICON
+ICN_CRITICAL=$ICON
+fi
+#echo "--------$ICON -------"
+#ICN_LOW=${2}.png
+ICN_INST=$ipath/actions/messagebox_critical.png
+ICN_UPGR=$ipath/actions/messagebox_critical.png
+ICN_UNIST=$ipath/actions/messagebox_critical.png
+
+
+dohelp=0
+su_user=0
+users=
+user=`whoami`
+timeout=10000 # 10 seconds
+timeout=6000 # 10 seconds
+priority=low # low normal or critical
+
+
+
+
+if [ $UID = 0 ]; then
+ su_user=1
+user=$(ps aux | awk '{print $1" "$11}' | sed -e 's|root.*||'| grep dbus-launch | awk '{print $1}' ) 
+if [ "$(echo $user |grep '^[a-zA-Z]')" = "" ];then
+    dbg "Not named user, get from group id"
+    usernum=`echo "$user" | grep '^[0-9]'`
+    for anuser in `cat /etc/group | grep "$usernum" | awk -F: '{ print $1}'` ;do 
+	users="$anuser $(echo "$user" | sed "s|$usernum||" | uniq)"
+    done
+ else
+    dbg "Great this is a named user"
+    users=$user
+fi
+ if [ "x$users" == "x" ]; then
+  echo "Not connected X users"
+  echo "    NOTIFICATION: $title"
+  echo "         $text"
+  exit 0
+ fi
+fi
+
+while getopts "u:t:p:x:w:hd" flag
+do
+  case "$flag" in
+      '?')
+          dohelp=1
+          ;;
+      'd') 
+          # Debugging Flag
+          set -x
+          ;;
+      'h')
+          dohelp=1
+          ;;
+      'u')
+          user="$OPTARG"
+          ;;
+      'p')
+          priority="$OPTARG"
+          ;;
+      't')
+          timeout=$(($OPTARG+0))
+          ;;
+      'x')
+          cmd="$OPTARG"
+          ;;
+      'w')
+          wmd="$OPTARG"
+          ;;
+  esac
+done
+
+
+# Push the parsed flags off the stack so we can get to title and text
+shift $((OPTIND-1)); OPTIND=1
+
+if [ $dohelp != 0 ]; then
+    clear
+    cat <<EOF >&2
+
+
+ ------- Send a message to notification service via DBUS -------
+# More blackPanther OS commands built-in available in BubbleMSG #
+
+ Standard options:
+    usage: $0 "MSG Header" "Long Message.."
+	    (example: $0 "Welcome Dear $USER" "Example System Message First Start Now...." )
+
+ Advanced options:
+
+    usage: $0 [install] [uninstall] [upgrade] "applicationname" 
+	    (example: $0 install gimp)
+    usage: $0 [error] [other] "showed message" 
+	    (example: $0 error "Example Installation Error")
+
+ Expert options:
+    usage: $0 [-t timeout] [-u user] [-p priority] title [text] [-x appname]
+
+    -t timeout     duration of the notification in seconds [default: 20000]
+    -p priority    color of notification can be low normal or critical [default: normal]
+    -u user        user to notify [defaults to you: $(whoami)]
+    -x running	
+    -h             this help
+
+If text isn't specified, then title is used.
+EOF
+    exit 1
+fi
+
+# get the title and text
+title=$1
+text=$2
+
+if [ ! -z $cmd ]&&[ -z $wmd ]
+then
+    wmd1="Run1 $cmd"
+    wmd2="Desktop icon"
+    cmd1="-n \"$wmd1\" -x \"$cmd\""
+    cmd2="-n \"$wmd2\" -x \"$dskt\""
+    cmds="$cmd1 $cmd2&"
+ else
+    cmd=$text
+    wmd1="Run2 $cmd"
+    cmd1="-n \"$wmd1\" -x \"$cmd\""
+    #cmds="$cmd1 $cmd2&"
+    cmds=""
+fi
+
+if [ -z "$title" ]; then
+    echo "error: You need to give me a title" >&2
+    dohelp=1
+fi
+if [ -z "$text" ]; then
+    text=$title
+fi
+
+# Check the timeout
+if [ -z "$timeout" ]; then
+    echo "error: Timeout must be a number" >&2
+    dohelp=1
+fi
+
+#dskicn=`rpmquery -il $cmd | grep $cmd.desktop`
+#ret=$?		# if 0 available desktop file ot 1 skip copy to user desktop
+#dskcmd="" 	# needed command
+
+#cp -f $dskicn $HOME/Desktop
+
+# Collect the dbus addresses
+declare -a dbuses
+pushdbus() {
+  if [ -z "$1" ]; then
+      return # nothing to push
+  fi
+  for dbus in "${dbuses[@]}"; do
+      if [ "${dbus}" = "$1" ]; then
+          return # It's a duplicate
+      fi
+  done
+  dbuses[${#dbuses[@]}]="$1"
+  # need to run from crontab
+  export DBUS_SESSION_BUS_ADDRESS="$1"
+}
+
+# Default environment, if it exists
+pushdbus "${DBUS_SESSION_BUS_ADDRESS}"
+
+for user in $users; do
+# Gnome
+for pid in $(pgrep -u $user gnome-session); do
+í    # find DBUS session bus for this session
+    pushdbus `grep -z DBUS_SESSION_BUS_ADDRESS \
+             /proc/$pid/environ | sed -e 's/DBUS_SESSION_BUS_ADDRESS=//'`
+done
+# X-Session
+for pid in $(pgrep -u $user x-session); do
+    # find DBUS session bus for this session
+    pushdbus `grep -z DBUS_SESSION_BUS_ADDRESS \
+             /proc/$pid/environ | sed -e 's/DBUS_SESSION_BUS_ADDRESS=//'`
+done
+
+done
+
+while [ $# -gt 0 ]
+do
+chkint
+ case $1 in
+  install )
+    title="$ITITLE"
+    if [ "$KDEINTEGRATION" = "yes" -o "$KDEINTEGRATION" = "auto" ];then
+    text="$A <font size=4><b>$2</b></font> $IMSG"
+    else
+    text="$A <b>$2</b> $IMSG"
+    fi
+    PIC=$2
+    cmds="-x $2 -n '$RUNMSG'"
+   shift
+   ;;
+  uninstall )
+    title="$RMTITLE"
+    text="$A $2 $RMMSG
+    "
+    cmds=""
+    PIC=$2
+   shift
+   ;;
+  upgrade )
+    title="$UTITLE"
+    text="$A $2 $UMSG
+    "
+    PIC=$2
+    cmds=""
+   shift
+   ;;
+  error )
+    title=${ERRMSG}
+    text="$2 $3"
+    priority="critical"
+   shift
+   ;;
+  warning )
+    title=${WARNMSG}
+    text="$2 $3"
+    priority="normal"
+   shift
+   ;;
+  other )
+   title=${OTHMSG}
+   text="$2"
+   #MESSAGE="$2 $3"
+   cmds="$3"
+   shift
+   ;;
+ esac
+ shift
+done
+
+case $priority in
+ normal)
+  ICON=$ICN_NORMAL
+  ;;
+ low)
+  ICON=$ICN_LOW
+  ;;
+ critical)
+  ICON=$ICN_CRITICAL
+  ;;
+ *)
+  LEVEL="normal"
+  #ICON=$ICN_LOW
+  ;;
+esac
+
+dbg "(1)$ICON"
+
+if [ -n $ICON ]
+then
+    dbg "(2)$ICON"
+    #echo "prog:$PIC"
+    #src=`find /usr/share/icons/hicolor/32x32/ -type f -name "$PIC.*" | head -n 1`
+    dbg "*** find ($PIC) ***"
+    src=`find /usr/share/icons/hicolor/32x32/ -type f -name "${PIC}.png" | head -n 1`
+    dbg "Hmm.. not found... find $PIC icon in other source "
+    if [ ! -f "$src" ];then
+	#if [ -n $ICON ];then 
+	#     echo "1:[$ICON]"
+	#     src="$ICON"
+	#    else
+    	    #PIC="$ICON"
+    	    src=`find /usr/share/icons/large -type f -name "${PIC}.png" | head -n 1`
+    	    dbg "Opss! not  here..find $PIC icon alternate path $src"
+	    if [ ! -n "$src" ]&&[ "$title" = "$ITITLE" ]&&[ "$UID" = "0" ];then
+    		#src=`find /usr/share/icons/ -type f -name "${PIC}.png" | head -n 1`
+    		src=`locate "${PIC}.png" | grep '/usr/share/icons' | \
+    		sed -e 's|\(.*\)16\(.*\)||' -e 's|\(.*\)22\(.*\)||' -e 's|\(.*\)128\(.*\)||'| grep ${PIC} | head -n 1`
+    		dbg "*** Ajaj! ($src) ***"
+	    fi
+	#fi
+    fi
+    if [ -f "$src" ]	#&&[ ! -n "$ICON" ]
+    then
+	dbg "2:[$ICON]"
+	dbg "3:[$src]"
+	#ICON=$PIC
+	ICON=$src
+	#echo "*----------- $ICON --------------"
+	OICN="-i ${ICON}"
+    else	
+	OICN=" -i ${ICON}"
+    fi
+ else
+	OICN=""
+	dbg "-- skip icon discovery --"
+fi
+
+#echo "----------- $OICN --------------"
+#echo "----------- $ICON --------------"
+
+    #echo "$daemon $OICN -u $priority -t $timeout $title $text"
+
+if [ $su_user = 1 ]; then
+ for user in $users; do
+    #chkint $user
+    #KDEINTEGRATION=`cat /tmp/.kintegration.lock | sed 's|KDEINTEGRATION=||'`
+    #kdialog --msgbox "$USER - $HOME -  $user - $KDE_FULL_SESSION - $KDEINTEGRATION"
+    if [ "$KDEINTEGRATION" = "yes" -o "$KDEINTEGRATION" = "auto" ];then
+    dbg "KDE INTEGRATION ON"
+    echo ""
+    OICN=$(echo $OICN| sed -e 's|-i ||')
+    su -c "kdialog --title '$title' --passivepopup '<img src=$OICN> &nbsp;&nbsp;$text<br>' 9" $user &#2>/dev/null
+    dbg "kdialog --title '$title' --passivepopup '<img src=$OICN> &nbsp;&nbsp;$text' 9 $user"
+    else
+    dbg "KDE INTEGRATION OFF"
+	if [ -x /usr/lib/notify-osd/notify-osd ];then
+	    su -c "$daemon -u $priority $OICN -t $timeout '$title' '$text' " $user &#2>/dev/null
+	    dbg "su -c \"$daemon -u $priority $OICN -t $timeout \"$title\" \"$text\"  $user" #2>/dev/null
+	 else
+	    su -c "$daemon -u $priority $OICN -t $timeout '$title' '$text' $cmds" $user &#2>/dev/null
+	    dbg "su -c \"$daemon -u $priority $OICN -t $timeout \"$title\" \"$text\" $cmds $user" #2>/dev/null    
+        fi
+    fi
+  if [ $? != 0 ]; then
+    echo "NOTIFICATION: $title"
+    echo "$text"
+    exit
+  fi
+ done
+ exit
+fi
+
+for dbus in "${dbuses[@]}";
+do
+  if [ "$KDEINTEGRATION" = "yes" -o "$KDEINTEGRATION" = "auto" ];then
+    dbg "DBUS ON / KDE INTEGRATION ON"
+    echo ""
+    [ "$UID" = "0" ]&&su -c "kdialog --title '$title' --passivepopup '<img src=$OICN> &nbsp;&nbsp;$text<br>' 9" $user &#2>/dev/null
+    [ "$UID" != "0" ]&& kdialog --title "$title" --passivepopup "<img src=$(echo $OICN | sed 's|-i ||')>&nbsp;&nbsp;$text<br>" 9 &#2>/dev/null
+   else
+    dbg "DBUS ON / KDE INTEGRATION OFF"
+    env DBUS_SESSION_BUS_ADDRESS="${dbus}" notify-send $OICN -u $priority -t $timeout "$title" "$text" &
+  fi
+done
+
+rm -f $LOCKFILE 2>/dev/null

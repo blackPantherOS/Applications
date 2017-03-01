@@ -1,0 +1,94 @@
+#!/bin/sh
+
+# written by Charles Barcza 
+# blackPanther OS * www.bkackpanther.hu
+
+ . /etc/bubblemsg.conf
+
+case $LANG in
+    hu*)
+	on_os="blackPanther OS buborék üzenetek beállítása"
+	pl_sel="Kérem válasszon a lisából ..."
+	integon=" - KDE integráció (no/yes/auto)"
+	kcheckon=" - KDE felismerés (no/yes/auto)"
+	deflock=" - A zárolási fájl "
+	donemsg="A művelet sikeresen befejeződött..."
+	quit=" - Kilépés, nem tesz semmit"
+	lockfilemsg="Adja meg a zárolási fájl helyét és a fájl nevét. A mezőben az aktuális értéket látja"
+	selectmsg="Válassza ki az új beállítási értéket."
+	akt="Most:"
+    ;;
+    *)
+	on_os="blackPanther OS bubble messages settings"
+	pl_sel="Please select action ..."
+	integon=" - KDE integration (no/yes/auto)"
+	kcheckon=" - KDE detect (no/yes/auto)"
+	deflock=" - The lock file "
+	donemsg="The action successful..."
+	quit=" - Exit, none action.."
+	intstat="Enable"
+	lockfilemsg="Please enter the lockfile path and name. The default value now displayed."
+	selectmsg="Please select the new set value."
+	akt="Now:"
+    ;;
+esac
+
+test /etc/blackPanther-release || exit
+echo "
+	BubbleConf starting under $(cat /etc/blackPanther-release| sed -e 's|release |v|' -e 's|for.*||')...
+     "
+
+intset() {
+	value=`kdialog --combobox "$selectmsg [$akt:$KDEINTEGRATION]" auto yes no` 
+	if [[ -n $value ]];then
+	perl -pi -e "s|KDEINTEGRATION=.*|KDEINTEGRATION=\"$value\"|" /etc/bubblemsg.conf
+	else
+	kdialog --error "Invalid value, exit"
+	fi
+}
+
+chkset() {
+	value=`kdialog --combobox "$selectmsg [$akt:$KDECHECK]" auto yes no` 
+	if [[ -n $value ]];then
+	perl -pi -e "s|KDECHECK=.*|KDECHECK=\"$value\"|" /etc/bubblemsg.conf
+	else
+	kdialog --error "Invalid value, exit"
+	fi
+}
+
+if [ "$1" = "intset" ]&&[ $UID = 0 ];then
+    intset
+elif [ "$1" = "chkset" ]&&[ $UID = 0 ];then
+    chkset
+else
+first=`kdialog --caption "Bubble Admin" --icon "oxypanther" \
+	--menu "<div align=left><img src='/usr/share/icons/oxypanther.png'><b><i>$on_os</b></i><br></div>\
+	<div align=left><small><i>$pl_sel</i></div>:</small>" \
+	1 "$integon [$akt:$KDEINTEGRATION]" 2 "$kcheckon [$akt:$KDECHECK]" 3 "$deflock [$akt:$LOCKFILE]" 4 "$quit"`
+
+#echo "select: $first"
+if [ "$first" = "" ];then
+    echo "	No selected"
+elif [ "$first" = "1" ];then
+    echo "	Set KDE integration.. "
+    kdesu bubbleconf intset
+    kdialog --msgbox "$donemsg"
+elif [ "$first" = "2" ];then
+    echo "	Set KDE detect.."
+    kdesu bubbleconf chkset
+    kdialog --msgbox "$donemsg"
+elif [ "$first" = "3" ];then
+    echo "	Set lockfile... "
+    input=`kdialog --inputbox "$lockfilemsg" /tmp/.kintegration.lock`
+    echo "$input"
+    if [ ! -n "$input" ];then
+	kdialog --error "Invalid value, lockfile or path! No changed default lockfile."
+     else
+        kdialog --msgbox "Set now: $input"
+    fi
+elif [ "$first" = "4" ];then
+    echo "	Exit.."
+    exit
+fi
+
+fi

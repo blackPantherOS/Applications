@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="7" >
+  <Doc0 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/src/main.cpp" >
+   <View0 line="63" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/src/cbase.h" >
+   <View0 line="25" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/src/cbase.cpp" >
+   <View0 line="286" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/src/cbubbled.h" >
+   <View0 line="100" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/src/cbubbled.cpp" >
+   <View0 line="362" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:/home/tomi/Prog/kdevelop/bubbled/TODO" >
+   <View0 line="0" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:/usr/lib/qt-3.3/doc/html/qt.html" >
+   <View0 Type="Documentation" />
+  </Doc6>
+ </DocsAndViews>
+ <pluginList>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+  <kdevdebugger>
+   <breakpointList/>
+  </kdevdebugger>
+ </pluginList>
+</KDevPrjSession>
