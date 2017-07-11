@@ -1,0 +1,1 @@
+pylupdate4 -verbose *.py *.ui -ts lang_xx.ts
