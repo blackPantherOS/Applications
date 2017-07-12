@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="local" >
+    <file>pics/hardware.png</file>
+    <file>pics/logo.png</file>
+  </qresource>
+</RCC>
